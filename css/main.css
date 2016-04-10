@@ -100,9 +100,58 @@ body {
   background: #212b5c;
 }
 
+a {
+  text-decoration: none;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+.column-1,
+.column-2,
+.column-3,
+.column-4 {
+  margin: 0 18px 0 0;
+}
+
+.column-1 {
+  max-width: 183px;
+}
+
+.column-2 {
+  max-width: 386px;
+}
+
+.column-3 {
+  max-width: 589px;
+}
+
+.column-4 {
+  max-width: 792px;
+}
+
+.wrapper,
 .container {
   margin: 0 auto;
+}
+
+.wrapper {
+  overflow: hidden;
   max-width: 1022px;
+}
+
+.container {
+  max-width: 828px;
 }
 
 header,
@@ -123,14 +172,63 @@ footer,
   background: #667cb7;
 }
 
+h1 {
+
+}
+
+h2 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.links p {
+  color: rgb(255, 172, 156);
+  text-transform: uppercase;
+}
+
+.links .sign-up {
+  background: #667cb7;
+  color: white;
+  padding: 0.75em 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 nav {
   text-transform: uppercase;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+  float: left;
+  width: 157px;
+}
+
+.back-to-top {
+  position: absolute;
+  right: 0;
 }
 
 nav a {
   color: white;
   font-weight: bold;
-  text-decoration: none;
+}
+
+.speaker-card {
+  background: pink;
+  float: left;
+}
+
+.speaker-card .name {
+
+}
+
+.speaker-card .subtitle {
+
 }
 
 /* ==========================================================================
