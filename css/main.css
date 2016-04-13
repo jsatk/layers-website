@@ -126,6 +126,10 @@ header,
   background: #2a3471;
 }
 
+header h3 {
+  color: #ffc9c0;
+}
+
 footer,
 .links {
   background: #212b5c;
@@ -135,8 +139,22 @@ footer,
   background: #5166a9;
 }
 
+footer,
+.deets p {
+  color: #ffdfd6;
+}
+
 .sign-up {
   background: #667cb7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;text-transform: uppercase;
 }
 
 h1 {
@@ -149,14 +167,14 @@ h2 {
 }
 
 .links p {
-  color: rgb(255, 172, 156);
+  color: #ffc9c0;
   text-transform: uppercase;
 }
 
 .links .sign-up {
   background: #667cb7;
   color: white;
-  padding: 0.75em 1em;
+  padding: 0.4em 1em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -179,7 +197,7 @@ h2 {
 .hamburger-button span,
 .hamburger-button span:before,
 .hamburger-button span:after {
-  background: white;
+  background: #ffc9c0;
   border-radius: 1px;
   content: '';
   cursor: pointer;
@@ -243,16 +261,17 @@ nav a {
 }
 
 .speaker-card {
-  background: pink;
-  float: left;
+  background: linear-gradient(to bottom, #26306d 50%, transparent 50%);
+  color: #ffdfd6;
 }
 
 .speaker-card .name {
-
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .speaker-card .subtitle {
-
+  font-style: italic;
 }
 
 /* ==========================================================================
@@ -362,6 +381,14 @@ nav a {
 
   .hamburger-button {
     display: none;
+  }
+
+  .links .sign-up {
+    padding: 0.75em 1em;
+  }
+
+  .speaker-card {
+    float: left;
   }
 }
 
