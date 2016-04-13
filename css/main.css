@@ -104,40 +104,8 @@ a {
   text-decoration: none;
 }
 
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-}
-
 section {
   position: relative;
-  overflow: hidden;
-}
-
-.column-1,
-.column-2,
-.column-3,
-.column-4 {
-  margin: 0 18px 0 0;
-}
-
-.column-1 {
-  max-width: 183px;
-}
-
-.column-2 {
-  max-width: 386px;
-}
-
-.column-3 {
-  max-width: 589px;
-}
-
-.column-4 {
-  max-width: 792px;
 }
 
 .wrapper,
@@ -147,11 +115,10 @@ section {
 
 .wrapper {
   overflow: hidden;
-  max-width: 1022px;
 }
 
 .container {
-  max-width: 828px;
+  max-width: 80%;
 }
 
 header,
@@ -194,7 +161,71 @@ h2 {
   text-transform: uppercase;
 }
 
+.nav {
+  min-height: 35px;
+}
+
+.hamburger-button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.hamburger-button {
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
+.hamburger-button span,
+.hamburger-button span:before,
+.hamburger-button span:after {
+  background: white;
+  border-radius: 1px;
+  content: '';
+  cursor: pointer;
+  display: block;
+  height: 5px;
+  position: absolute;
+  width: 35px;
+}
+
+.hamburger-button span:before {
+  top: -10px;
+}
+
+.hamburger-button span:after {
+  bottom: -10px;
+}
+
+.hamburger-button span,
+.hamburger-button span:before,
+.hamburger-button span:after {
+  transition: all 500ms ease-in-out;
+}
+
+.hamburger-button.active span {
+  background-color: transparent;
+}
+
+.hamburger-button.active span:before,
+.hamburger-button.active span:after {
+  top: 0;
+}
+
+.hamburger-button.active span:before {
+  transform: rotate(45deg);
+}
+
+.hamburger-button.active span:after {
+  transform: rotate(-45deg);
+}
+
+.back-to-top {
+  display: none;
+}
+
 nav {
+  display: none;
   text-transform: uppercase;
 }
 
@@ -204,13 +235,6 @@ nav ul {
 
 nav li {
   list-style: none;
-  float: left;
-  width: 157px;
-}
-
-.back-to-top {
-  position: absolute;
-  right: 0;
 }
 
 nav a {
@@ -311,15 +335,39 @@ nav a {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* All previous styles styled following layers_web2016_mobile_0_560.jpg */
+
+/* layers_web2016_tab_561_820.jpg */
+@media all and (min-width: 561px) {
+
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/* layers_web2016_max_821_1024.jpg */
+@media all and (min-width: 821px) {
+  nav {
+    display: block;
+  }
+
+  nav li {
+    list-style: none;
+    float: left;
+    width: 157px;
+  }
+
+  .back-to-top {
+    display: inline;
+    position: absolute;
+    right: 0;
+  }
+
+  .hamburger-button {
+    display: none;
+  }
+}
+
+/* layers_web2016_max_1024.jpg */
+@media all and (min-width: 1024px) {
+
 }
 
 /* ==========================================================================
