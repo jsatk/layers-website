@@ -95,9 +95,24 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*
+  List of custom font names to use in the `font-family` tag
+  TTProstoSansCondensed-Black
+  TTProstoSansCondensed-Italic
+  TTProstoSansCondensed-Bold
+  TTProstoSansCondensed-LightItalic
+  TTProstoSansCondensed-BlackItalic
+  TTProstoSansCondensed-BoldItalic
+  TTProstoSansCondensed-Light
+  TTProstoSansCondensed-Regular
+  TTProstoSansCondensed-Thin
+  TTProstoSansCondensed-ThinItalic
+*/
+
 html,
 body {
   background: #212b5c;
+  font-family: TTProstoSansCondensed-Regular;
 }
 
 a {
@@ -126,8 +141,24 @@ header,
   background: #2a3471;
 }
 
+header h1,
 header h3 {
   color: #ffc9c0;
+}
+
+header h1 {
+  font-size: 110px;
+  margin: 320px 0 0;
+}
+
+header h2 {
+  margin-top: -30px;
+  margin-bottom: 35px;
+}
+
+header h3 {
+  letter-spacing: 2px;
+  margin-bottom: 280px;
 }
 
 footer,
@@ -157,13 +188,21 @@ h6 {
   text-transform: uppercase;text-transform: uppercase;
 }
 
-h1 {
-
+h1,
+h2 {
+  font-family: TTProstoSansCondensed-Black;
 }
 
 h2 {
   color: white;
+  font-family: TTProstoSansCondensed-Bold;
+  letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.links .copy {
+  font-size: 2em;
+  margin-top: 145px;
 }
 
 .links p {
@@ -172,13 +211,26 @@ h2 {
 }
 
 .links .sign-up {
+  display: inline-block;
   background: #667cb7;
   color: white;
+  font-size: 0.75em;
+  margin-bottom: 64px;
+  margin-top: 32px;
   padding: 0.4em 1em;
   text-align: center;
   text-transform: uppercase;
 }
 
+.links img {
+  display: none;
+}
+
+.desktop-only {
+  display: none;
+}
+
+  margin-top: 32px;
 .nav {
   min-height: 35px;
 }
@@ -258,6 +310,22 @@ nav li {
 nav a {
   color: white;
   font-weight: bold;
+}
+
+.speakers h1,
+.speakers h2 {
+  color: #667cb7;
+}
+
+.speakers h1 {
+  font-size: 7em;
+  line-height: 0.95;
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+
+.speakers h2 {
+  text-transform: none;
 }
 
 .speaker-card {
