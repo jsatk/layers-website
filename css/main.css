@@ -141,6 +141,10 @@ header,
   background: #2a3471;
 }
 
+header .logo {
+  margin-top: 40px;
+}
+
 header h1,
 header h3 {
   color: #ffc9c0;
@@ -148,7 +152,7 @@ header h3 {
 
 header h1 {
   font-size: 110px;
-  margin: 320px 0 0;
+  margin: 280px 0 0;
 }
 
 header h2 {
@@ -200,8 +204,13 @@ h2 {
   text-transform: uppercase;
 }
 
-.links .copy {
+.links .copy,
+.deets .copy {
   font-size: 2em;
+  line-height: 1.25em;
+}
+
+.links .copy {
   margin-top: 145px;
 }
 
@@ -222,21 +231,26 @@ h2 {
   text-transform: uppercase;
 }
 
-.links img {
-  display: none;
-}
-
 .desktop-only {
   display: none;
 }
 
-  margin-top: 32px;
 .nav {
+  margin-top: 32px;
   min-height: 35px;
 }
 
+.links .logo,
 .hamburger-button {
   position: absolute;
+}
+
+.links .logo {
+  left: 0;
+  top: 50%;
+}
+
+.hamburger-button {
   right: 0;
   top: 50%;
 }
@@ -317,7 +331,7 @@ nav a {
   color: #667cb7;
 }
 
-.speakers h1 {
+h1.off-center-title {
   font-size: 7em;
   line-height: 0.95;
   margin-top: 150px;
@@ -331,15 +345,61 @@ nav a {
 .speaker-card {
   background: linear-gradient(to bottom, #26306d 50%, transparent 50%);
   color: #ffdfd6;
+  height: 340px;
+  position: relative;
+}
+
+.speaker-card > div {
+  position: absolute;
+  top: 50%;
+  margin-top: -43px;
 }
 
 .speaker-card .name {
-  font-weight: bold;
+  font-family: TTProstoSansCondensed-Bold;
+  font-size: 2em;
+  line-height: 1em;
   text-transform: uppercase;
 }
 
 .speaker-card .subtitle {
   font-style: italic;
+  font-size: 1.75em;
+}
+
+.deets h1 {
+  color: #ffdfd6;
+}
+
+.deets .directions p {
+  color: #fcffff;
+  text-transform: uppercase;
+}
+
+.deets .directions small {
+  font-family: TTProstoSansCondensed-Thin;
+  text-transform: none;
+}
+
+strong {
+  font-family: TTProstoSansCondensed-Bold;
+}
+
+footer h1.off-center-title {
+  font-size: 5em;
+}
+
+footer .bio p {
+  font-size: 1.75em;
+  line-height: 1.35em;
+}
+
+footer .name {
+  font-family: TTProstoSansCondensed-Bold;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 38px;
 }
 
 /* ==========================================================================
