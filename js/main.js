@@ -1,4 +1,15 @@
-document.querySelector('.hamburger-button')
-  .addEventListener('click', function () {
-    this.classList.toggle('active');
+(function ($, window, undefined) {
+  'use strict';
+
+  var showHideNav = function () {
+    $('.hamburger-button').on('click', function (event) {
+      event.preventDefault();
+      $(this).toggleClass('active');
+      $('nav').toggle();
+    });
+  };
+
+  $(document).on('ready', function () {
+    showHideNav();
   });
+})(jQuery, this);
