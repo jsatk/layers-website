@@ -259,12 +259,12 @@ h2 {
 
 .links .logo {
   left: 0;
-  top: 50%;
+  top: 35px;
 }
 
 .hamburger-button {
   right: 0;
-  top: 50%;
+  top: 35px;
 }
 
 .hamburger-button {
@@ -330,11 +330,39 @@ nav ul {
 }
 
 nav li {
+  font-family: TTProstoSansCondensed-Black;
+  font-size: 2em;
+  line-height: 3.5em;
   list-style: none;
 }
 
-nav a {
-  color: white;
+nav li:first-child,
+nav li:last-child {
+  background: #212c5b;
+}
+
+nav li:nth-child(2) {
+  background: #2a3470;
+}
+
+nav li:nth-child(3) {
+  background: #5166a8;
+}
+
+nav li:nth-child(4) {
+  background: #657db7;
+}
+
+nav li:nth-child(odd) a {
+  color: #ffcebd;
+}
+
+nav li:nth-child(2) a {
+  color: #667cb7;
+}
+
+nav li:nth-child(4) a {
+  color: #212c5b;
 }
 
 .speakers h1,
