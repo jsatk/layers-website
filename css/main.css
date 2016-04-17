@@ -132,7 +132,8 @@ section {
   overflow: hidden;
 }
 
-.container {
+.container,
+.nav.mobile-only {
   max-width: 84%;
 }
 
@@ -250,25 +251,32 @@ h2 {
 }
 
 .nav {
+  background: #2a3470;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
-.links .logo,
+.nav .logo {
+  margin-top: 30px;
+}
+
+.nav-buttons-wrapper {
+  padding-bottom: 22px;
+}
+
 .hamburger-button {
-  position: absolute;
+  margin-top: 35px;
 }
 
-.links .logo {
-  left: 0;
-  top: 35px;
-}
-
-.hamburger-button {
-  right: 0;
-  top: 35px;
+.nav a {
+  display: block;
 }
 
 .hamburger-button {
   cursor: pointer;
+  float: right;
   padding: 10px 35px 16px 0px;
 }
 
@@ -327,6 +335,7 @@ nav {
 
 nav ul {
   padding: 0;
+  margin: 0;
 }
 
 nav li {
@@ -378,7 +387,7 @@ h1.off-center-title {
 }
 
 .speakers {
-  margin-bottom: 116px;
+  padding-bottom: 116px;
 }
 
 .speakers h2 {
