@@ -111,7 +111,7 @@ textarea {
 
 html,
 body {
-  background: #212b5c;
+  background: #212c5b;
   font-family: TTProstoSansCondensed-Regular;
 }
 
@@ -138,7 +138,7 @@ section {
 
 header,
 .speakers {
-  background: #2a3471;
+  background: #2a3470;
 }
 
 header .logo {
@@ -147,7 +147,7 @@ header .logo {
 
 header h1,
 header h3 {
-  color: #ffc9c0;
+  color: #ffcebd;
 }
 
 header h1 {
@@ -168,20 +168,20 @@ header h3 {
 
 footer,
 .links {
-  background: #212b5c;
+  background: #212c5b;
 }
 
 .deets {
-  background: #5166a9;
+  background: #5166a8;
 }
 
 footer,
 .deets p {
-  color: #ffdfd6;
+  color: #ffc3bd;
 }
 
 .sign-up {
-  background: #667cb7;
+  background: #657db7;
 }
 
 h1,
@@ -219,7 +219,7 @@ h2 {
 }
 
 .links p {
-  color: #ffc9c0;
+  color: #ffcebd;
   font-size: 0.75em;
   line-height: 1.3em;
   text-transform: uppercase;
@@ -232,7 +232,7 @@ h2 {
 
 .links .sign-up {
   display: inline-block;
-  background: #667cb7;
+  background: #657db7;
   color: white;
   font-size: 0.5em;
   margin-bottom: 64px;
@@ -273,7 +273,7 @@ h2 {
 .hamburger-button span,
 .hamburger-button span:before,
 .hamburger-button span:after {
-  background: #ffc9c0;
+  background: #ffcebd;
   border-radius: 1px;
   content: '';
   cursor: pointer;
@@ -364,7 +364,7 @@ h1.off-center-title {
 
 .speaker-card {
   background: linear-gradient(to bottom, #26306d 60%, transparent 40%);
-  color: #ffdfd6;
+  color: #ffcebd;
   height: 192px;
   padding-left: 15px;
   position: relative;
@@ -384,6 +384,7 @@ h1.off-center-title {
 }
 
 .speaker-card .subtitle {
+  color: white;
   font-style: italic;
   font-size: 1.3em;
 }
@@ -399,7 +400,7 @@ h1.off-center-title {
 }
 
 .deets h1 {
-  color: #ffdfd6;
+  color: #212c5b;
   margin-top: 118px;
 }
 
@@ -429,6 +430,10 @@ strong {
   padding-bottom: 144px;
 }
 
+.sign-up h1 {
+  color: #ffc3bd;
+}
+
 footer h1.off-center-title {
   font-size: 3em;
   line-height: 1.1em;
@@ -442,6 +447,7 @@ footer h1.off-center-title {
 }
 
 footer .bio p {
+  color: white;
   font-size: 1.2em;
   line-height: 1.35em;
   margin-top: 8px;
