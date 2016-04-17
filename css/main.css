@@ -161,6 +161,7 @@ header h2 {
 }
 
 header h3 {
+  font-family: TTProstoSansCondensed-Bold;
   font-size: 1.3em;
   letter-spacing: 5px;
   margin-bottom: 115px;
@@ -200,7 +201,6 @@ h2 {
 
 h2 {
   color: white;
-  font-family: TTProstoSansCondensed-Bold;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -220,6 +220,7 @@ h2 {
 
 .links p {
   color: #ffcebd;
+  font-family: TTProstoSansCondensed-Bold;
   font-size: 0.75em;
   line-height: 1.3em;
   text-transform: uppercase;
@@ -231,9 +232,10 @@ h2 {
 }
 
 .links .sign-up {
-  display: inline-block;
   background: #657db7;
   color: white;
+  display: inline-block;
+  font-family: TTProstoSansCondensed-Bold;
   font-size: 0.5em;
   margin-bottom: 64px;
   margin-top: 112px;
@@ -333,7 +335,6 @@ nav li {
 
 nav a {
   color: white;
-  font-weight: bold;
 }
 
 .speakers h1,
@@ -353,6 +354,7 @@ h1.off-center-title {
 }
 
 .speakers h2 {
+  font-family: TTProstoSansCondensed-Bold;
   font-size: 1.2em;
   margin: 0;
   text-transform: none;
@@ -377,7 +379,7 @@ h1.off-center-title {
 }
 
 .speaker-card .name {
-  font-family: TTProstoSansCondensed-Bold;
+  font-family: TTProstoSansCondensed-Black;
   font-size: 1.6em;
   line-height: 1em;
   text-transform: uppercase;
@@ -385,7 +387,7 @@ h1.off-center-title {
 
 .speaker-card .subtitle {
   color: white;
-  font-style: italic;
+  font-family: TTProstoSansCondensed-Italic;
   font-size: 1.3em;
 }
 
@@ -394,6 +396,7 @@ h1.off-center-title {
 }
 
 .deets .copy {
+  font-family: TTProstoSansCondensed-Bold;
   font-size: 1.4em;
   line-height: 1.2em;
   margin-top: 32px;
@@ -406,7 +409,7 @@ h1.off-center-title {
 
 .deets .directions p {
   color: #fcffff;
-  text-transform: uppercase;
+  font-family: TTProstoSansCondensed-Regular;
 }
 
 .deets .google-map {
@@ -424,6 +427,7 @@ h1.off-center-title {
 
 strong {
   font-family: TTProstoSansCondensed-Bold;
+  text-transform: uppercase;
 }
 
 .sign-up {
@@ -455,7 +459,7 @@ footer .bio p {
 }
 
 footer .name {
-  font-family: TTProstoSansCondensed-Bold;
+  font-family: TTProstoSansCondensed-Black;
   font-size: 1.4em;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -468,6 +472,7 @@ footer .name {
 
 footer h3 {
   font-size: 1.3em;
+  font-family: TTProstoSansCondensed-Black;
   margin-bottom: -10px;
 }
 
