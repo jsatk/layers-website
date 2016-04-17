@@ -11,6 +11,11 @@
   };
 
   var scrollToSections = function () {
+    $('.scroll-to-top').on('click', function (event) {
+      event.preventDefault();
+      $('html, body').animate({scrollTop: 0}, 300);
+    });
+
     $('.wrapper.nav nav a[href^="#"]').on('click', function (event) {
       event.preventDefault();
       var $target = $($(this).attr('href'));

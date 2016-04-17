@@ -142,6 +142,15 @@ header,
   background: #2a3470;
 }
 
+.header-image {
+  margin-bottom: 42px;
+  margin-top: 215px;
+}
+
+.nav .scroll-to-top {
+  display: inline;
+}
+
 header .logo {
   margin-top: 28px;
 }
