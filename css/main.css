@@ -329,8 +329,16 @@ h2 {
 }
 
 nav {
-  display: none;
+  height: 0;
   text-transform: uppercase;
+  -webkit-transition: height 200ms ease-in;
+  -moz-transition: height 200ms ease-in;
+  -o-transition: height 200ms ease-in;
+  transition: height 200ms ease-in;
+}
+
+nav.active {
+  height: 560px;
 }
 
 nav ul {
