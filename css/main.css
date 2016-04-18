@@ -614,38 +614,28 @@ footer h3 {
 
 /* layers_web2016_tab_561_820.jpg */
 @media all and (min-width: 561px) {
+  .links .sign-up {
+    width: 50%;
+  }
 
+  .speaker-card,
+  .sponsor-card {
+    width: 49%;
+  }
+
+  .speaker-card:nth-child(odd),
+  .sponsor-card:nth-child(odd) {
+    float: left;
+  }
+
+  .speaker-card:nth-child(even),
+  .sponsor-card:nth-child(even) {
+    float: right;
+  }
 }
 
 /* layers_web2016_max_821_1024.jpg */
-@media all and (min-width: 821px) {
-  nav {
-    display: block;
-  }
-
-  nav li {
-    list-style: none;
-    float: left;
-    width: 157px;
-  }
-
-  .back-to-top {
-    display: inline;
-    position: absolute;
-    right: 0;
-  }
-
-  .hamburger-button {
-    display: none;
-  }
-
-  .links .sign-up {
-    padding: 0.75em 1em;
-  }
-
-  .speaker-card {
-    float: left;
-  }
+@media all and (min-width: 561px) {
 }
 
 /* layers_web2016_max_1024.jpg */
