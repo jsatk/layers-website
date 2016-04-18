@@ -132,8 +132,7 @@ section {
   overflow: hidden;
 }
 
-.container,
-.nav.mobile-only {
+.container {
   max-width: 84%;
 }
 
@@ -260,11 +259,14 @@ h2 {
 }
 
 .nav {
+  z-index: 1;
+}
+
+.mobile-only .nav {
   background: #2a3470;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
 }
 
 .nav .logo {
@@ -362,32 +364,32 @@ nav li {
   list-style: none;
 }
 
-nav li:first-child,
-nav li:last-child {
+.mobile-only nav li:first-child,
+.mobile-only nav li:last-child {
   background: #212c5b;
 }
 
-nav li:nth-child(2) {
+.mobile-only nav li:nth-child(2) {
   background: #2a3470;
 }
 
-nav li:nth-child(3) {
+.mobile-only nav li:nth-child(3) {
   background: #5166a8;
 }
 
-nav li:nth-child(4) {
+.mobile-only nav li:nth-child(4) {
   background: #657db7;
 }
 
-nav li:nth-child(odd) a {
+.mobile-only nav li:nth-child(odd) a {
   color: #ffcebd;
 }
 
-nav li:nth-child(2) a {
+.mobile-only nav li:nth-child(2) a {
   color: #667cb7;
 }
 
-nav li:nth-child(4) a {
+.mobile-only nav li:nth-child(4) a {
   color: #212c5b;
 }
 
@@ -635,7 +637,68 @@ footer h3 {
 }
 
 /* layers_web2016_max_821_1024.jpg */
-@media all and (min-width: 561px) {
+@media all and (min-width: 821px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
+  .header-image {
+    width: 58%;
+  }
+
+  .nav {
+    margin-top: 20px;
+    overflow: hidden;
+  }
+
+  .nav .logo {
+    margin: 0;
+  }
+
+  nav li {
+    float: left;
+    font-size: 0.75em;
+    margin-left: 7%;
+  }
+
+  nav li:first-child {
+    margin-left: 0;
+  }
+
+  nav a {
+    color: white;
+    letter-spacing: 2px;
+    line-height: 3.5em;
+  }
+
+  .links .copy {
+    background: url(../img/butthead.png) top right no-repeat;
+    background-size: 193px 179px;
+  }
+
+  .speaker-cards-container {
+    float: right;
+    width: 70%;
+  }
+
+  .speakers section:first-child img {
+    margin-left: 4%;
+    margin-top: 40px;
+  }
+
+  .speakers section:nth-child(2) {
+    margin-top: -405px;
+  }
+
+  .deets .copy {
+    float: right;
+    margin-top: -169px;
+    width: 70%;
+  }
 }
 
 /* layers_web2016_max_1024.jpg */

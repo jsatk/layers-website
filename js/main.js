@@ -16,7 +16,7 @@
       $('html, body').animate({scrollTop: 0}, 300);
     });
 
-    $('.wrapper.nav nav a[href^="#"]').on('click', function (event) {
+    $('.nav nav a[href^="#"]').on('click', function (event) {
       event.preventDefault();
       var $target = $($(this).attr('href'));
 
