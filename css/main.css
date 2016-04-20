@@ -616,6 +616,10 @@ footer h3 {
 
 /* layers_web2016_tab_561_820.jpg */
 @media all and (min-width: 561px) {
+  section {
+    position: static;
+  }
+
   .links .sign-up {
     width: 50%;
   }
@@ -698,13 +702,8 @@ footer h3 {
     margin-top: 40px;
   }
 
-  .speakers section:nth-child(2) {
-    margin-top: -405px;
-  }
-
   .deets .copy {
     float: right;
-    margin-top: -169px;
     width: 70%;
   }
 
@@ -717,8 +716,7 @@ footer h3 {
   }
 
   .speakers section:first-child,
-  .deets section:first-child,
-  .sign-up section:first-child {
+  .deets section:first-child {
     position: absolute;
   }
 
@@ -728,6 +726,63 @@ footer h3 {
 
   .speakers section.speaker-cards-container {
     margin-top: 140px;
+  }
+
+  .google-map {
+    clear: right;
+    height: 440px; /* Height of the map */
+    position: relative;
+  }
+
+  .google-map .directions {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .sign-up h1 {
+    float: left;
+  }
+
+  .tito-container {
+    float: right;
+    margin-top: 140px;
+    width: 70%;
+  }
+
+  .host-cards-container {
+    overflow: hidden;
+  }
+
+  .host-cards-container section:first-child {
+    float: left;
+    width: 30%;
+  }
+
+  .host-cards-container section:last-child {
+    float: right;
+    margin-top: 130px;
+    width: 60%;
+  }
+
+  .sponsor-card {
+    float: right;
+    height: 250px;
+  }
+
+  .sponsor-card:nth-child(odd),
+  .sponsor-card:nth-child(even) {
+    float: left;
+  }
+
+  .sponsor-card.half-card {
+    float: right;
+    height: 125px;
+  }
+
+  .sponsors {
+    float: right;
+    width: 60%;
   }
 }
 
