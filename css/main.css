@@ -662,7 +662,7 @@ footer h3 {
   nav li {
     float: left;
     font-size: 0.75em;
-    margin-left: 7%;
+    margin-left: 10%;
   }
 
   nav li:first-child {
@@ -675,9 +675,17 @@ footer h3 {
     line-height: 3.5em;
   }
 
-  .links .copy {
-    background: url(../img/butthead.png) top right no-repeat;
+  .links section:last-child {
+    background: url(../img/butthead.png) 80% 0 no-repeat;
     background-size: 193px 179px;
+  }
+
+  .links .copy {
+    width: 70%;
+  }
+
+  .links .sign-up {
+    margin-top: 0;
   }
 
   .speaker-cards-container {
@@ -698,6 +706,28 @@ footer h3 {
     float: right;
     margin-top: -169px;
     width: 70%;
+  }
+
+  /* Begin odd overlaying stuff */
+  .speakers .container,
+  .deets .container,
+  .sign-up .container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .speakers section:first-child,
+  .deets section:first-child,
+  .sign-up section:first-child {
+    position: absolute;
+  }
+
+  .speakers section:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .speakers section.speaker-cards-container {
+    margin-top: 140px;
   }
 }
 
