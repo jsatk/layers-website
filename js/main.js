@@ -30,8 +30,21 @@
     });
   };
 
+  var transitionNavBarBackgroundOnMobile = function () {
+    var breakpoint = $('.links').offset().top;
+
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop() > breakpoint) {
+        $('.mobile-only.nav').addClass('get-background-color');
+      } else {
+        $('.mobile-only.nav').removeClass('get-background-color');
+      }
+    });
+  };
+
   $(document).on('ready', function () {
     showHideNav();
     scrollToSections();
+    transitionNavBarBackgroundOnMobile();
   });
 })(jQuery, this);

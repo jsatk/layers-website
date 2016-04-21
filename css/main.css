@@ -258,15 +258,16 @@ h2 {
   display: none;
 }
 
-.nav {
-  z-index: 1;
-}
-
-.mobile-only .nav {
-  background: #2a3470;
+.mobile-only.nav {
   position: fixed;
   top: 0;
   width: 100%;
+  transition: background-color 1s;
+  z-index: 1;
+}
+
+.mobile-only.nav.get-background-color {
+  background: #212c5b;
 }
 
 .nav .logo {
@@ -299,7 +300,7 @@ h2 {
   content: '';
   cursor: pointer;
   display: block;
-  height: 5px;
+  height: 2px;
   position: absolute;
   width: 35px;
 }
