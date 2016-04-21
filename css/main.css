@@ -200,7 +200,8 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: uppercase;text-transform: uppercase;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 h1,
@@ -210,7 +211,6 @@ h2 {
 
 h2 {
   color: white;
-  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -245,7 +245,8 @@ h2 {
   color: white;
   display: inline-block;
   font-family: TTProstoSansCondensed-Bold;
-  font-size: 0.5em;
+  font-size: 0.55em;
+  line-height: 2em;
   margin-bottom: 64px;
   margin-top: 112px;
   padding: 0;
@@ -400,7 +401,7 @@ nav li {
 }
 
 h1.off-center-title {
-  font-size: 5em;
+  font-size: 4em;
   line-height: 0.95;
   margin-top: 128px;
   margin-bottom: 0;
@@ -461,6 +462,7 @@ h1.off-center-title {
 
 .deets h1 {
   color: #212c5b;
+  margin-bottom: 50px;
   margin-top: 118px;
 }
 
@@ -475,6 +477,10 @@ h1.off-center-title {
 
 .deets .directions .copy {
   margin-top: 60px;
+}
+
+.deets .directions p:first-child {
+  text-transform: uppercase;
 }
 
 .deets .directions small {
@@ -493,6 +499,7 @@ strong {
 
 .sign-up h1 {
   color: #ffc3bd;
+  margin-bottom: 30px;
 }
 
 footer h1.off-center-title {
@@ -519,7 +526,7 @@ footer .name {
   font-family: TTProstoSansCondensed-Black;
   font-size: 1.4em;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   margin-top: 38px;
 }
 

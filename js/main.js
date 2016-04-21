@@ -22,7 +22,7 @@
 
       if ($target.length) {
         $('html, body').animate({
-          scrollTop: $target.offset().top
+          scrollTop: $target.offset().top - 50
         }, 300);
 
         $('.hamburger-button, .wrapper.nav nav').toggleClass('active');
