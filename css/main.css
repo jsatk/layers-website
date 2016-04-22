@@ -133,12 +133,16 @@ section {
 }
 
 .container {
-  max-width: 84%;
+  max-width: 80%;
 }
 
 header,
 .speakers {
   background: #2a3470;
+}
+
+header {
+  background-image: url('../img/bg.gif');
 }
 
 .header-image {
@@ -147,6 +151,7 @@ header,
 }
 
 .nav .scroll-to-top {
+  cursor: pointer;
   display: inline;
 }
 
@@ -275,6 +280,7 @@ h2 {
 .nav.desktop-only {
   margin-top: 0;
   padding-top: 20px;
+  position: relative;
   z-index: 1;
 }
 
@@ -682,10 +688,24 @@ footer h3 {
   nav li {
     float: left;
     font-size: 0.75em;
-    margin-left: 10%;
+    margin-left: 12%;
+  }
+
+  nav li:first-child,
+  nav li:last-child {
+    position: absolute;
   }
 
   nav li:first-child {
+    left: 4%;
+  }
+
+  nav li:last-child {
+    right: 4%;
+  }
+
+  nav li:first-child,
+  nav li:nth-child(2) {
     margin-left: 0;
   }
 
@@ -696,7 +716,7 @@ footer h3 {
   }
 
   .what section:last-child {
-    background: url(../img/butthead.png) 80% 0 no-repeat;
+    background: url(../img/butthead.png) top right no-repeat;
     background-size: 193px 179px;
   }
 

@@ -59,7 +59,7 @@
       });
 
       $('.nav.desktop-only').css({
-        position: 'static',
+        position: 'relative',
         width: 'auto'
       });
     }
@@ -69,6 +69,7 @@
     showHideNav();
     scrollToSections();
     transitionNavBarBackgroundOnMobile();
+    nameMeDamnIt();
 
     $(window).on('scroll', function () {
       transitionNavBarBackgroundOnMobile();
