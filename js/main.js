@@ -1,6 +1,9 @@
 (function ($, window, undefined) {
   'use strict';
 
+  var breakpoint = $('.nav.desktop-only').offset().top;
+  var paddingTop = $('.nav.desktop-only').outerHeight(true);
+
   var showHideNav = function () {
     $('.hamburger-button').on('click', function (event) {
       event.preventDefault();
@@ -25,26 +28,51 @@
           scrollTop: $target.offset().top - 50
         }, 300);
 
-        $('.hamburger-button, .wrapper.nav nav').toggleClass('active');
+        if ($('.nav.mobile-only').is(':visible')) {
+          $('.hamburger-button, .wrapper.nav nav').toggleClass('active');
+        }
       }
     });
   };
 
   var transitionNavBarBackgroundOnMobile = function () {
-    var breakpoint = $('.links').offset().top;
+    if ($(window).scrollTop() > breakpoint) {
+      $('.mobile-only.nav').addClass('get-background-color');
+    } else {
+      $('.mobile-only.nav').removeClass('get-background-color');
+    }
+  };
 
-    $(window).on('scroll', function () {
-      if ($(window).scrollTop() > breakpoint) {
-        $('.mobile-only.nav').addClass('get-background-color');
-      } else {
-        $('.mobile-only.nav').removeClass('get-background-color');
-      }
-    });
+  var nameMeDamnIt = function () {
+    if ($('.nav.desktop-only').is(':visible') &&  ($(window).scrollTop() > breakpoint)) {
+      $('.what').css({
+        paddingTop: paddingTop + 'px'
+      });
+
+      $('.nav.desktop-only').css({
+        position: 'fixed',
+        width: '100%'
+      });
+    } else {
+      $('.what').css({
+        paddingTop: 0
+      });
+
+      $('.nav.desktop-only').css({
+        position: 'static',
+        width: 'auto'
+      });
+    }
   };
 
   $(document).on('ready', function () {
     showHideNav();
     scrollToSections();
     transitionNavBarBackgroundOnMobile();
+
+    $(window).on('scroll', function () {
+      transitionNavBarBackgroundOnMobile();
+      nameMeDamnIt();
+    });
   });
 })(jQuery, this);

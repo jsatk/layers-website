@@ -177,7 +177,7 @@ header h3 {
 }
 
 footer,
-.links {
+.what {
   background: #212c5b;
 }
 
@@ -214,20 +214,20 @@ h2 {
   text-transform: uppercase;
 }
 
-.links {
+.what {
   margin-bottom: 93px;
 }
 
-.links .copy {
+.what .copy {
   font-size: 2em;
   line-height: 1.25em;
 }
 
-.links .copy {
+.what .copy {
   margin-top: 120px;
 }
 
-.links p {
+.what p {
   color: #ffcebd;
   font-family: TTProstoSansCondensed-Bold;
   font-size: 0.75em;
@@ -236,11 +236,11 @@ h2 {
   width: 95%;
 }
 
-.links p:first-child {
+.what p:first-child {
   margin-bottom: -17px;
 }
 
-.links .sign-up {
+.what .sign-up {
   background: #657db7;
   color: white;
   display: inline-block;
@@ -267,8 +267,15 @@ h2 {
   z-index: 1;
 }
 
-.mobile-only.nav.get-background-color {
+.mobile-only.nav.get-background-color,
+.nav.desktop-only {
   background: #212c5b;
+}
+
+.nav.desktop-only {
+  margin-top: 0;
+  padding-top: 20px;
+  z-index: 1;
 }
 
 .nav .logo {
@@ -628,7 +635,7 @@ footer h3 {
     position: static;
   }
 
-  .links .sign-up {
+  .what .sign-up {
     width: 50%;
   }
 
@@ -665,6 +672,7 @@ footer h3 {
   .nav {
     margin-top: 20px;
     overflow: hidden;
+    top: 0;
   }
 
   .nav .logo {
@@ -687,16 +695,16 @@ footer h3 {
     line-height: 3.5em;
   }
 
-  .links section:last-child {
+  .what section:last-child {
     background: url(../img/butthead.png) 80% 0 no-repeat;
     background-size: 193px 179px;
   }
 
-  .links .copy {
+  .what .copy {
     width: 70%;
   }
 
-  .links .sign-up {
+  .what .sign-up {
     margin-top: 0;
   }
 
