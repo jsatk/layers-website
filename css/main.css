@@ -682,6 +682,11 @@ footer h3 {
   .sponsor-card:nth-child(even) {
     float: right;
   }
+
+  header h2,
+  header h3 {
+    font-size: 1.4em;
+  }
 }
 
 /* layers_web2016_max_821_1024.jpg */
