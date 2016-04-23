@@ -170,14 +170,15 @@ header h1 {
 }
 
 header h2 {
+  font-size: 1em;
   margin-top: -24px;
   margin-bottom: 35px;
 }
 
 header h3 {
   font-family: TTProstoSansCondensed-Bold;
-  font-size: 1.3em;
-  letter-spacing: 5px;
+  font-size: 1em;
+  letter-spacing: 2px;
   margin-bottom: 115px;
 }
 
@@ -191,7 +192,6 @@ footer,
 }
 
 .deets section:nth-child(2) .copy {
-  background: url(../img/butthead.png) left center no-repeat;
   background-size: 193px 179px;
 }
 
@@ -222,6 +222,14 @@ h2 {
 h2 {
   color: white;
   text-transform: uppercase;
+}
+
+h4 {
+  color: white;
+  font-family: TTProstoSansCondensed-Black;
+  letter-spacing: 2px;
+  margin-bottom: -10px;
+  padding-top: 15px;
 }
 
 .what {
@@ -255,10 +263,9 @@ h2 {
   color: white;
   display: inline-block;
   font-family: TTProstoSansCondensed-Bold;
-  font-size: 0.55em;
+  font-size: 0.45em;
   line-height: 2em;
   margin-bottom: 64px;
-  margin-top: 112px;
   padding: 0;
   text-align: center;
   text-transform: uppercase;
@@ -432,9 +439,9 @@ h1.off-center-title {
 .speakers h2 {
   font-family: TTProstoSansCondensed-Bold;
   font-size: 1.2em;
-  margin: 0;
-  text-align: right;
   text-transform: none;
+  line-height: 1.1em;
+  margin-top: 10px;
 }
 
 .speakers section:nth-child(2) {
@@ -452,7 +459,7 @@ h1.off-center-title {
 .speaker-card > div {
   position: absolute;
   top: 50%;
-  margin-top: -43px;
+  margin-top: -15px;
 }
 
 .speaker-card .name {
@@ -488,6 +495,10 @@ h1.off-center-title {
 .deets .directions p {
   color: #fcffff;
   font-family: TTProstoSansCondensed-Regular;
+}
+
+.deets .directions p:last-child {
+  line-height: 1.35em;
 }
 
 .deets .google-map {
@@ -875,6 +886,10 @@ footer h3 {
 
   .sponsor-card {
     width: 33%;
+  }
+
+  .deets section:nth-child(2) .copy {
+    background: url(../img/butthead.png) left center no-repeat;
   }
 }
 

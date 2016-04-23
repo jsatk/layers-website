@@ -20,7 +20,7 @@
   };
 
   var setGlobalVars = function () {
-    mobileBreakpoint  = elms.$mobileNavWrapper.offset().top;
+    mobileBreakpoint  = elms.$what.offset().top;
     desktopBreakpoint = elms.$desktopNavWrapper.offset().top;
     paddingTop        = elms.$desktopNavWrapper.outerHeight(true);
   };
@@ -41,6 +41,7 @@
     elms.$scrollToTop.on('click', function (event) {
       event.preventDefault();
       elms.$body.animate({scrollTop: 0}, 300);
+      toggleActiveMobileNav();
     });
 
     elms.$scrollToSection.on('click', function (event) {
