@@ -190,6 +190,11 @@ footer,
   background: #5166a8;
 }
 
+.deets section:nth-child(2) .copy {
+  background: url(../img/butthead.png) left center no-repeat;
+  background-size: 193px 179px;
+}
+
 footer,
 .deets p {
   color: #ffc3bd;
@@ -428,6 +433,7 @@ h1.off-center-title {
   font-family: TTProstoSansCondensed-Bold;
   font-size: 1.2em;
   margin: 0;
+  text-align: right;
   text-transform: none;
 }
 
@@ -551,6 +557,10 @@ footer h3 {
   font-size: 1.3em;
   font-family: TTProstoSansCondensed-Black;
   margin-bottom: -10px;
+}
+
+.map {
+  background: #212c5b;
 }
 
 /* ==========================================================================
@@ -820,11 +830,50 @@ footer h3 {
     float: right;
     width: 60%;
   }
+
+  .sign-up img {
+    display: none;
+  }
 }
 
 /* layers_web2016_max_1024.jpg */
 @media all and (min-width: 1024px) {
+  .speaker-card {
+    float: left !important;
+    margin-left: 1%;
+    width: 32%;
+  }
 
+  .deets p {
+    clear: right;
+    float: right;
+    width: 70%;
+  }
+
+  .tito-container {
+    width: 50%;
+  }
+
+  .sign-up img {
+    display: block;
+    float: right;
+    margin-left: 2%;
+    margin-top: 160px;
+  }
+
+  .sponsors,
+  .host-cards-container section:last-child {
+    width: 70%;
+  }
+
+  .host-card {
+    float: left;
+    width: 50%;
+  }
+
+  .sponsor-card {
+    width: 33%;
+  }
 }
 
 /* ==========================================================================
