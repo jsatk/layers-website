@@ -178,9 +178,7 @@
               </section>
 
               <section class="google-map">
-                <div class="map">
-                  <img class="desktop-only" src="" style="visibility: hidden;" alt="" width="794" height="438">
-                </div>
+                <div class="map desktop-only" id="layersmap2016"></div>
 
                 <div class="copy directions">
                   <p class="cushycms">Just 2 blocks from WWDC, we're just steps away from cool
@@ -293,7 +291,10 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/mapinit.js"></script>
         <script src='https://js.tito.io/v1' async></script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <!--
