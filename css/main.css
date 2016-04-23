@@ -281,7 +281,7 @@ h4 {
   top: 0;
   width: 100%;
   transition: background-color 1s;
-  z-index: 1;
+  z-index: 2;
 }
 
 .mobile-only.nav.get-background-color,
@@ -291,9 +291,9 @@ h4 {
 
 .nav.desktop-only {
   margin-top: 0;
-  padding-top: 20px;
+  padding: 10px 0;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav .logo {
@@ -426,7 +426,7 @@ nav li {
 }
 
 h1.off-center-title {
-  font-size: 4em;
+  font-size: 6em;
   line-height: 0.95;
   margin-top: 128px;
   margin-bottom: 0;
@@ -533,8 +533,8 @@ strong {
 }
 
 footer h1.off-center-title {
-  font-size: 3em;
-  line-height: 1.1em;
+  font-size: 4em;
+  line-height: 0.9em;
   margin-bottom: 60px;
   margin-left: 7px;
   margin-top: 114px;
@@ -552,12 +552,22 @@ footer .bio p {
   width: 90%;
 }
 
-footer .name {
+footer h4 {
+  color: #ffcdbc;
+}
+
+h4,
+.sponsor-card .name,
+.host-card .name {
   font-family: TTProstoSansCondensed-Black;
   font-size: 1.4em;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-top: 38px;
+}
+
+.sponsor-card .name {
+  font-size: 1.2em;
 }
 
 .sponsors {
@@ -691,6 +701,15 @@ footer h3 {
 
 /* layers_web2016_max_821_1024.jpg */
 @media all and (min-width: 821px) {
+  p {
+    font-size: 0.8em;
+  }
+
+  section {
+    position: relative;
+    z-index: 1;
+  }
+
   .mobile-only {
     display: none;
   }
@@ -852,6 +871,40 @@ footer h3 {
   .sign-up img {
     display: none;
   }
+
+  .deets section:nth-child(2) .copy {
+    background: url(../img/butthead.png) left center no-repeat;
+    background-size: 193px 179px;
+  }
+
+  .speakers {
+    padding-top: 20px;
+  }
+
+  .speaker-card .name {
+    font-size: 1.3em;
+  }
+
+  .speaker-card .subtitle {
+    font-size: 1em;
+  }
+
+  .speaker-card > div {
+    margin-top: -10px;
+  }
+
+  .speakers h2 {
+    font-size: 1.5em;
+    margin-left: 80px;
+  }
+
+  .deets {
+    padding-top: 90px;
+  }
+
+  .deets h1 {
+    margin-top: 40px;
+  }
 }
 
 /* layers_web2016_max_1024.jpg */
@@ -891,10 +944,6 @@ footer h3 {
 
   .sponsor-card {
     width: 33%;
-  }
-
-  .deets section:nth-child(2) .copy {
-    background: url(../img/butthead.png) left center no-repeat;
   }
 }
 
