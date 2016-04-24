@@ -437,7 +437,7 @@ nav li {
 }
 
 h1.off-center-title {
-  font-size: 6em;
+  font-size: 4em;
   line-height: 0.95;
   margin-top: 128px;
   margin-bottom: 0;
@@ -505,7 +505,6 @@ h1.off-center-title {
 }
 
 .deets h4 {
-  float: right;
   font-size: 0.9em;
   width: 70%;
 }
@@ -725,6 +724,10 @@ footer h3 {
 
 /* layers_web2016_tab_561_820.jpg */
 @media all and (min-width: 561px) {
+  h1.off-center-title {
+    font-size: 6em;
+  }
+
   section {
     position: static;
   }
@@ -843,6 +846,10 @@ footer h3 {
   .deets .copy {
     float: right;
     width: 70%;
+  }
+
+  .deets h4 {
+    float: right;
   }
 
   /* Begin odd overlaying stuff */
