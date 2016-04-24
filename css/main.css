@@ -145,6 +145,13 @@ header {
   background-image: url('../img/bg.gif');
 }
 
+header .wrapper {
+  background-image: url('../img/headline/top.svg'), url('../img/headline/middle.svg'), url('../img/headline/bottom.svg');
+  background-position: top center, bottom center, center center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 70% auto, 70% auto, 70% auto;
+}
+
 .header-image {
   margin-bottom: 42px;
   margin-top: 215px;
@@ -180,6 +187,10 @@ header h3 {
   font-size: 1em;
   letter-spacing: 2px;
   margin-bottom: 115px;
+}
+
+footer {
+  padding-bottom: 200px;
 }
 
 footer,
@@ -449,9 +460,10 @@ h1.off-center-title {
 }
 
 .speaker-card {
-  background: linear-gradient(to bottom, #26306d 60%, transparent 40%);
+  background: linear-gradient(to bottom, #26306d 60%, transparent 40%) no-repeat;
+  background-size: 100%;
   color: #ffcebd;
-  height: 192px;
+  height: 144px;
   padding-left: 15px;
   position: relative;
 }
@@ -492,6 +504,10 @@ h1.off-center-title {
   margin-top: 118px;
 }
 
+.deets h4 {
+  font-size: 0.9em;
+}
+
 .deets .directions p {
   color: #fcffff;
   font-family: TTProstoSansCondensed-Regular;
@@ -499,6 +515,7 @@ h1.off-center-title {
 
 .deets .directions p:last-child {
   line-height: 1.35em;
+  margin-top: 0;
 }
 
 .deets .google-map {
@@ -584,6 +601,42 @@ footer h3 {
   background: #212c5b;
   height: 500px;
   width: 500px;
+}
+
+.speaker-card:first-child {
+  background-image: url(../img/speakers/maja.jpg);
+}
+
+.speaker-card:nth-child(2) {
+  background-image: url(../img/speakers/wil.jpg);
+}
+
+.speaker-card:nth-child(3) {
+  background-image: url(../img/speakers/db.jpg);
+}
+
+.speaker-card:nth-child(4) {
+  background-image: url(../img/speakers/maja.jpg);
+}
+
+.speaker-card:nth-child(5) {
+  background-image: url(../img/speakers/wil.jpg);
+}
+
+.speaker-card:nth-child(6) {
+  background-image: url(../img/speakers/db.jpg);
+}
+
+.speaker-card:nth-child(7) {
+  background-image: url(../img/speakers/maja.jpg);
+}
+
+.speaker-card:nth-child(8) {
+  background-image: url(../img/speakers/wil.jpg);
+}
+
+.speaker-card:nth-child(9) {
+  background-image: url(../img/speakers/db.jpg);
 }
 
 /* ==========================================================================
@@ -830,7 +883,7 @@ footer h3 {
   .tito-container {
     float: right;
     margin-top: 140px;
-    width: 70%;
+    width: 60%;
   }
 
   .host-cards-container {
@@ -839,7 +892,7 @@ footer h3 {
 
   .host-cards-container section:first-child {
     float: left;
-    width: 30%;
+    width: 37%;
   }
 
   .host-cards-container section:last-child {
@@ -890,7 +943,7 @@ footer h3 {
   }
 
   .speaker-card > div {
-    margin-top: -10px;
+    margin-top: -23px;
   }
 
   .speakers h2 {
