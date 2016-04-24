@@ -505,7 +505,9 @@ h1.off-center-title {
 }
 
 .deets h4 {
+  float: right;
   font-size: 0.9em;
+  width: 70%;
 }
 
 .deets .directions p {
@@ -515,7 +517,6 @@ h1.off-center-title {
 
 .deets .directions p:last-child {
   line-height: 1.35em;
-  margin-top: 0;
 }
 
 .deets .google-map {
@@ -555,6 +556,7 @@ footer h1.off-center-title {
   margin-bottom: 60px;
   margin-left: 7px;
   margin-top: 114px;
+  white-space: nowrap;
 }
 
 .host-card {
@@ -892,7 +894,7 @@ footer h3 {
 
   .host-cards-container section:first-child {
     float: left;
-    width: 37%;
+    width: 30%;
   }
 
   .host-cards-container section:last-child {
