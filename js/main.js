@@ -8,15 +8,21 @@
   var elms              = {}; // Object that holds all of our jQuery elements.
 
   var cacheElms = function () {
-    elms.$window            = $(window);
-    elms.$body              = $('html, body');
-    elms.$hamburgerButton   = $('.hamburger-button');
-    elms.$mobileNav         = $('.wrapper.nav.mobile-only nav');
-    elms.$mobileNavWrapper  = $('.nav.mobile-only');
-    elms.$desktopNavWrapper = $('.nav.desktop-only');
-    elms.$scrollToTop       = $('.scroll-to-top');
-    elms.$scrollToSection   = $('.nav nav a[href^="#"]');
-    elms.$what              = $('.what');
+    elms.$window                 = $(window);
+    elms.$body                   = $('html, body');
+    elms.$hamburgerButton        = $('.hamburger-button');
+    elms.$mobileNav              = $('.wrapper.nav.mobile-only nav');
+    elms.$mobileNavWrapper       = $('.nav.mobile-only');
+    elms.$mobileNavButtonWrapper = $('.nav-buttons-wrapper');
+    elms.$mobileNavLis           = $('.nav.mobile-only li');
+    elms.$desktopNavWrapper      = $('.nav.desktop-only');
+    elms.$scrollToTop            = $('.scroll-to-top');
+    elms.$scrollToSection        = $('.nav nav a[href^="#"]');
+    elms.$what                   = $('.what');
+  };
+
+  var getMobileNavHeight = function () {
+    return elms.$window.outerHeight(true) - elms.$mobileNavButtonWrapper.outerHeight(true) + 'px';
   };
 
   var setGlobalVars = function () {
@@ -25,15 +31,15 @@
     paddingTop        = elms.$desktopNavWrapper.outerHeight(true);
   };
 
+  var setMobileNavHeight = function () {
+    var heightToSet = elms.$mobileNav.hasClass('active') ? getMobileNavHeight() : '0';
+    elms.$mobileNav.css('height', heightToSet);
+  };
+
   var toggleActiveMobileNav = function () {
     elms.$hamburgerButton.toggleClass('active');
     elms.$mobileNav.toggleClass('active');
-
-    if (elms.$mobileNav.hasClass('active')) {
-      elms.$mobileNav.css({ height: $(window).outerHeight(true) - $('.nav-buttons-wrapper').outerHeight(true) + 'px' });
-    } else {
-      elms.$mobileNav.css({ height: 0 });
-    }
+    setMobileNavHeight();
   };
 
   var showHideNav = function () {
@@ -70,28 +76,18 @@
   };
 
   var transitionNavBarBackgroundOnMobile = function () {
-    if (elms.$window.scrollTop() > mobileBreakpoint) {
-      elms.$mobileNavWrapper.addClass('get-background-color');
-    } else {
-      elms.$mobileNavWrapper.removeClass('get-background-color');
-    }
+    elms.$mobileNavWrapper.toggleClass('get-background-color', elms.$window.scrollTop() > mobileBreakpoint);
   };
 
   var desktopStickNav = function () {
     if (elms.$desktopNavWrapper.is(':visible') &&  (elms.$window.scrollTop() > desktopBreakpoint)) {
-      elms.$what.css({
-        paddingTop: paddingTop + 'px'
-      });
-
+      elms.$what.css('paddingTop', paddingTop + 'px');
       elms.$desktopNavWrapper.css({
         position: 'fixed',
         width: '100%'
       });
     } else {
-      elms.$what.css({
-        paddingTop: 0
-      });
-
+      elms.$what.css('paddingTop', '0');
       elms.$desktopNavWrapper.css({
         position: 'relative',
         width: 'auto'
@@ -104,10 +100,12 @@
     desktopStickNav();
   };
 
-  var getMobleNavLiLineHeight = function () {
-    $('.nav.mobile-only li').css({
-      lineHeight: ($(window).outerHeight(true) - $('.nav-buttons-wrapper').outerHeight(true)) / $('.nav.mobile-only li').length  + 'px'
-    });
+  var getMobileNavLiLineHeight = function () {
+    var liCount    = elms.$mobileNavLis.length;
+    var ulHeight   = elms.$window.height() - elms.$mobileNavButtonWrapper.outerHeight(true);
+    var lineHeight = ulHeight / liCount + 'px';
+
+    elms.$mobileNavLis.css('lineHeight', lineHeight);
   };
 
   $(document).on('ready', function () {
@@ -117,8 +115,10 @@
     scrollToSections();
     transitionNavBarBackgroundOnMobile();
     desktopStickNav();
-    getMobleNavLiLineHeight();
+    getMobileNavLiLineHeight();
 
+    // On resize re-calculate and set the height of the mobile nav item heights
+    elms.$window.on('resize', getMobileNavLiLineHeight);
     elms.$window.on('scroll', callOnWindowScroll);
   });
 })(jQuery, this);
