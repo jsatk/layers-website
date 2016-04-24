@@ -28,6 +28,12 @@
   var toggleActiveMobileNav = function () {
     elms.$hamburgerButton.toggleClass('active');
     elms.$mobileNav.toggleClass('active');
+
+    if (elms.$mobileNav.hasClass('active')) {
+      elms.$mobileNav.css({ height: $(window).outerHeight(true) - $('.nav-buttons-wrapper').outerHeight(true) + 'px' });
+    } else {
+      elms.$mobileNav.css({ height: 0 });
+    }
   };
 
   var showHideNav = function () {
@@ -98,6 +104,12 @@
     desktopStickNav();
   };
 
+  var getMobleNavLiLineHeight = function () {
+    $('.nav.mobile-only li').css({
+      lineHeight: ($(window).outerHeight(true) - $('.nav-buttons-wrapper').outerHeight(true)) / $('.nav.mobile-only li').length  + 'px'
+    });
+  };
+
   $(document).on('ready', function () {
     cacheElms();
     setGlobalVars();
@@ -105,6 +117,7 @@
     scrollToSections();
     transitionNavBarBackgroundOnMobile();
     desktopStickNav();
+    getMobleNavLiLineHeight();
 
     elms.$window.on('scroll', callOnWindowScroll);
   });

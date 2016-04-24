@@ -387,7 +387,7 @@ nav {
 }
 
 nav.active {
-  height: 560px;
+  height: 575px;
 }
 
 nav ul {
@@ -398,7 +398,7 @@ nav ul {
 nav li {
   font-family: TTProstoSansCondensed-Black;
   font-size: 2em;
-  line-height: 3.5em;
+  line-height: 3em;
   list-style: none;
 }
 
