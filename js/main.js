@@ -122,7 +122,8 @@
     // On resize re-calculate and set the height of the mobile nav item heights
     elms.$window.on('resize', getMobileNavLiLineHeight);
     elms.$window.on('scroll', callOnWindowScroll);
-    elms.$showCodeOfConduct.on('click', function () {
+    elms.$showCodeOfConduct.on('click', function (event) {
+      event.preventDefault();
       elms.$codeOfCoduct.toggleClass('active');
     });
   });

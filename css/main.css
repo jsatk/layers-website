@@ -640,16 +640,44 @@ footer h3 {
   background-image: url(../img/speakers/db.jpg);
 }
 
+.show-code-of-conduct {
+  background: #ffcdbc;
+  color: #212c5b;
+  display: inline-block;
+  font-family: TTProstoSansCondensed-Bold;
+  line-height: 2em;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 50%;
+}
+
 .code-of-conduct {
+  color: #ffcdbc;
   height: 0;
+  margin-top: 40px;
   -webkit-transition: height 200ms ease-in;
   -moz-transition: height 200ms ease-in;
   -o-transition: height 200ms ease-in;
   transition: height 200ms ease-in;
 }
 
+.code-of-conduct a,
+.code-of-conduct strong {
+  color: white;
+}
+
+.code-of-conduct a {
+  font-family: TTProstoSansCondensed-Bold;
+}
+
+.code-of-conduct p {
+  font-size: 1.2em;
+  line-height: 1.35em;
+}
+
 .code-of-conduct.active {
-  height: 600px;
+  height: 1300px;
 }
 
 /* ==========================================================================
@@ -903,7 +931,7 @@ footer h3 {
   }
 
   .tito-container {
-    float: right;
+    float: left;
     margin-top: 140px;
     width: 60%;
   }
@@ -912,15 +940,20 @@ footer h3 {
     overflow: hidden;
   }
 
+  .sign-up section:first-child,
   .host-cards-container section:first-child {
     float: left;
     width: 30%;
   }
 
+  .sign-up section:last-child,
   .host-cards-container section:last-child {
     float: right;
-    margin-top: 130px;
     width: 60%;
+  }
+
+  .host-cards-container section:last-child {
+    margin-top: 130px;
   }
 
   .sponsor-card {
@@ -997,7 +1030,7 @@ footer h3 {
   }
 
   .tito-container {
-    width: 50%;
+    width: 70%;
   }
 
   .sign-up img {
