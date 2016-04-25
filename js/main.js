@@ -19,6 +19,8 @@
     elms.$scrollToTop            = $('.scroll-to-top');
     elms.$scrollToSection        = $('.nav nav a[href^="#"]');
     elms.$what                   = $('.what');
+    elms.$showCodeOfConduct      = $('#show-code-of-conduct');
+    elms.$codeOfCoduct           = $('.code-of-conduct');
   };
 
   var getMobileNavHeight = function () {
@@ -120,5 +122,8 @@
     // On resize re-calculate and set the height of the mobile nav item heights
     elms.$window.on('resize', getMobileNavLiLineHeight);
     elms.$window.on('scroll', callOnWindowScroll);
+    elms.$showCodeOfConduct.on('click', function () {
+      elms.$codeOfCoduct.toggleClass('active');
+    });
   });
 })(jQuery, this);

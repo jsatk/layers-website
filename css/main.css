@@ -640,6 +640,18 @@ footer h3 {
   background-image: url(../img/speakers/db.jpg);
 }
 
+.code-of-conduct {
+  height: 0;
+  -webkit-transition: height 200ms ease-in;
+  -moz-transition: height 200ms ease-in;
+  -o-transition: height 200ms ease-in;
+  transition: height 200ms ease-in;
+}
+
+.code-of-conduct.active {
+  height: 600px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -764,6 +776,7 @@ footer h3 {
   }
 
   section {
+    overflow: hidden;
     position: relative;
     z-index: 1;
   }
