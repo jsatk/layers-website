@@ -680,6 +680,22 @@ footer h3 {
   height: 2600px;
 }
 
+.credits {
+  clear: both;
+  padding-top: 100px;
+  text-transform: uppercase;
+}
+
+.credits a {
+  color: white;
+}
+
+.credits h3 {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
