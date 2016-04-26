@@ -1089,7 +1089,21 @@ footer h3 {
   }
 
   .code-of-conduct.active {
-    height: 1520px;
+    height: 1240px;
+  }
+
+  .container {
+    max-width: 1024px;
+  }
+
+  .nav.desktop-only nav {
+    margin-left: 8%;
+  }
+}
+
+@media all and (min-width: 1236px) {
+  .nav.desktop-only nav {
+    margin-left: 4%;
   }
 }
 
