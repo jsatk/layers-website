@@ -147,7 +147,7 @@ header {
 
 header .wrapper {
   background-image: url('../img/headline/top.svg'), url('../img/headline/middle.svg'), url('../img/headline/bottom.svg');
-  background-position: top center, bottom center, center center;
+  background-position: top center, center center, bottom center;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 70% auto, 70% auto, 70% auto;
 }
