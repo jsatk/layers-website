@@ -835,7 +835,6 @@ footer h3 {
   }
 
   section {
-    overflow: hidden;
     position: relative;
     z-index: 1;
   }
