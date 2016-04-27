@@ -860,24 +860,10 @@ footer h3 {
   nav li {
     float: left;
     font-size: 0.75em;
-    margin-left: 11%;
-  }
-
-  nav li:first-child,
-  nav li:last-child {
-    position: absolute;
+    margin-left: 6.5%;
   }
 
   nav li:first-child {
-    left: 4%;
-  }
-
-  nav li:last-child {
-    right: 4%;
-  }
-
-  nav li:first-child,
-  nav li:nth-child(2) {
     margin-left: 0;
   }
 
@@ -1051,6 +1037,10 @@ footer h3 {
 
 /* layers_web2016_max_1024.jpg */
 @media all and (min-width: 1024px) {
+  nav li {
+    margin-left: 105px;
+  }
+
   .speaker-card {
     float: left !important;
     margin-left: 1%;
@@ -1094,16 +1084,6 @@ footer h3 {
 
   .container {
     max-width: 1024px;
-  }
-
-  .nav.desktop-only nav {
-    margin-left: 8%;
-  }
-}
-
-@media all and (min-width: 1236px) {
-  .nav.desktop-only nav {
-    margin-left: 4%;
   }
 }
 
