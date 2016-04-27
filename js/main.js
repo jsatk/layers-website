@@ -21,6 +21,7 @@
     elms.$what                   = $('.what');
     elms.$showCodeOfConduct      = $('#show-code-of-conduct');
     elms.$codeOfCoduct           = $('.code-of-conduct');
+    elms.$signMeUpLink           = $('.sign-up');
   };
 
   var getMobileNavHeight = function () {
@@ -58,7 +59,7 @@
       toggleActiveMobileNav();
     });
 
-    elms.$scrollToSection.on('click', function (event) {
+    var scrollTo = function (event) {
       event.preventDefault();
 
       // Get section to scroll to
@@ -70,11 +71,16 @@
           scrollTop: $target.offset().top - 50
         }, 300);
 
-        if (elms.$mobileNavWrapper.is(':visible')) {
+        var linkIsInMobileNav = $(event.target).closest('.mobile-only nav').length;
+
+        if (linkIsInMobileNav && elms.$mobileNavWrapper.is(':visible')) {
           toggleActiveMobileNav();
         }
       }
-    });
+    };
+
+    elms.$scrollToSection.on('click', scrollTo);
+    elms.$signMeUpLink.on('click', scrollTo)
   };
 
   var transitionNavBarBackgroundOnMobile = function () {

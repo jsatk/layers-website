@@ -535,6 +535,11 @@ h1.off-center-title {
   text-transform: none;
 }
 
+.deets .directions a,
+.deets .directions a:visited {
+  color: white;
+}
+
 strong {
   font-family: TTProstoSansCondensed-Bold;
   text-transform: uppercase;
@@ -892,17 +897,14 @@ footer h3 {
   }
 
   .speakers section:first-child img {
-    margin-left: 4%;
+    margin-left: 80px;
     margin-top: 40px;
   }
 
   .deets .copy {
     float: right;
-    width: 70%;
-  }
-
-  .deets h4 {
-    float: right;
+    width: 69.2%; /* I hate CSS so much right now */
+    margin-top: 55px;
   }
 
   /* Begin odd overlaying stuff */
@@ -923,7 +925,7 @@ footer h3 {
   }
 
   .speakers section.speaker-cards-container {
-    margin-top: 140px;
+    margin-top: 165px;
   }
 
   .google-map {
@@ -961,11 +963,11 @@ footer h3 {
   .sign-up section:last-child,
   .host-cards-container section:last-child {
     float: right;
-    width: 60%;
+    width: 69.2%;
   }
 
   .host-cards-container section:last-child {
-    margin-top: 130px;
+    margin-top: 140px;
   }
 
   .sponsor-card {
@@ -1047,19 +1049,23 @@ footer h3 {
     width: 32%;
   }
 
+  .deets h4 {
+    float: right;
+  }
+
   .deets p {
     clear: right;
     float: right;
-    width: 70%;
+    width: 67%; /* CSS is stupid */
   }
 
   .tito-container {
-    width: 70%;
+    width: 465px;
   }
 
   .sign-up img {
     display: block;
-    float: right;
+    float: left;
     margin-left: 2%;
     margin-top: 160px;
   }
