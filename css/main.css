@@ -610,39 +610,43 @@ footer h3 {
 }
 
 .speaker-card:first-child {
-  background-image: url(../img/speakers/maja.jpg);
+  background-image: url(../img/speakers/bio_genet_jesse.jpg);
 }
 
 .speaker-card:nth-child(2) {
-  background-image: url(../img/speakers/wil.jpg);
+  background-image: url(../img/speakers/bio_glass_chris.jpg);
 }
 
 .speaker-card:nth-child(3) {
-  background-image: url(../img/speakers/db.jpg);
+  background-image: url(../img/speakers/bio_hodgman_john.jpg);
 }
 
 .speaker-card:nth-child(4) {
-  background-image: url(../img/speakers/maja.jpg);
+  background-image: url(../img/speakers/bio_macdonald_jean.jpg);
 }
 
 .speaker-card:nth-child(5) {
-  background-image: url(../img/speakers/wil.jpg);
+  background-image: url(../img/speakers/bio_mrgan_christa.jpg);
 }
 
 .speaker-card:nth-child(6) {
-  background-image: url(../img/speakers/db.jpg);
+  background-image: url(../img/speakers/bio_murray_nelson.jpg);
 }
 
 .speaker-card:nth-child(7) {
-  background-image: url(../img/speakers/maja.jpg);
+  background-image: url(../img/speakers/bio_price_helena.jpg);
 }
 
 .speaker-card:nth-child(8) {
-  background-image: url(../img/speakers/wil.jpg);
+  background-image: url(../img/speakers/bio_shipley_wil.jpg);
 }
 
 .speaker-card:nth-child(9) {
-  background-image: url(../img/speakers/db.jpg);
+  background-image: url(../img/speakers/bio_slatkin_rebecca.jpg);
+}
+
+.speaker-card:nth-child(10) {
+  background-image: url(../img/speakers/bio_usiyan_tj.jpg);
 }
 
 .show-code-of-conduct {
