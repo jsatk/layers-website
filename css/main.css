@@ -649,9 +649,8 @@ footer h3 {
   background-image: url(../img/speakers/bio_usiyan_tj.jpg);
 }
 
+.tito-submit-wrapper button,
 .show-code-of-conduct {
-  background: #ffcdbc;
-  color: #212c5b;
   display: inline-block;
   font-family: TTProstoSansCondensed-Bold;
   line-height: 2em;
@@ -659,6 +658,15 @@ footer h3 {
   text-align: center;
   text-transform: uppercase;
   width: 100%;
+}
+
+.show-code-of-conduct {
+  background: #ffcdbc;
+  color: #212c5b;
+}
+
+.tito-submit-wrapper button {
+  color: #ffcdbc;
 }
 
 .code-of-conduct {
@@ -703,6 +711,39 @@ footer h3 {
   font-size: 1.2em;
   letter-spacing: 2px;
   margin-bottom: 0;
+}
+
+/* TITO OVERRIDES */
+.tito-wrapper {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.tito-ticket-price-quantity-wrapper,
+.tito-ticket-status,
+.tito-ticket-status-sold-out,
+.tito-ticket-name-wrapper {
+  border-bottom: 1px solid #ffcdbc;
+}
+
+.tito-wrapper a {
+  color: #ffcdbc;
+}
+
+.tito-badge-link {
+  text-align: right;
+}
+
+.tito-submit {
+  background: #212c5b;
+  border-radius: 0;
+  border: none;
+}
+
+.tito-ticket-quantity-field {
+  color: black;
+  font-size: 1em;
 }
 
 /* ==========================================================================
@@ -882,7 +923,7 @@ footer h3 {
   }
 
   .what section:last-child {
-    background: url(../img/butthead.png) top right no-repeat;
+    background: url(../img/section_graphics/graphic_intro.svg) top right no-repeat;
     background-size: 193px 179px;
   }
 
@@ -998,7 +1039,7 @@ footer h3 {
   }
 
   .deets section:nth-child(2) .copy {
-    background: url(../img/butthead.png) left center no-repeat;
+    background: url(../img/section_graphics/graphic_deets.svg) left center no-repeat;
     background-size: 193px 179px;
   }
 
@@ -1032,7 +1073,8 @@ footer h3 {
   }
 
   .show-code-of-conduct {
-    width: 60%;
+    margin-left: 10px;
+    width: 445px;
   }
 
   .code-of-conduct.active {
