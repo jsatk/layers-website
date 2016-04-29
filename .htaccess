@@ -1,0 +1,4 @@
+SSLOptions +StrictRequire
+SSLRequireSSL
+SSLRequire %{HTTP_HOST} eq "bringyourlayers.com"
+ErrorDocument 403 https://bringyourlayers.com
