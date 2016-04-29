@@ -540,6 +540,10 @@ h1.off-center-title {
   color: white;
 }
 
+.deets .copy p a {
+  color: white;
+}
+
 strong {
   font-family: TTProstoSansCondensed-Bold;
   text-transform: uppercase;
