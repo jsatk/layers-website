@@ -681,6 +681,10 @@ footer h3 {
   color: #212c5b;
 }
 
+.tito-container input {
+  color: black;
+}
+
 .tito-submit-wrapper button {
   color: #ffcdbc;
 }
