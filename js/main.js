@@ -21,7 +21,7 @@
     elms.$what                   = $('.what');
     elms.$showCodeOfConduct      = $('#show-code-of-conduct');
     elms.$codeOfCoduct           = $('.code-of-conduct');
-    elms.$signMeUpLink           = $('.sign-up');
+    elms.$signMeUpLink           = $('.go-to-sign-up');
   };
 
   var getMobileNavHeight = function () {
@@ -80,7 +80,7 @@
     };
 
     elms.$scrollToSection.on('click', scrollTo);
-    elms.$signMeUpLink.on('click', scrollTo)
+    elms.$signMeUpLink.on('click', scrollTo);
   };
 
   var transitionNavBarBackgroundOnMobile = function () {

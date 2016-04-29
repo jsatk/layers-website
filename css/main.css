@@ -269,7 +269,7 @@ h4 {
   margin-bottom: -17px;
 }
 
-.what .sign-up {
+.what .go-to-sign-up {
   background: #657db7;
   color: white;
   display: inline-block;
@@ -610,15 +610,15 @@ footer h3 {
 }
 
 .speaker-card:first-child {
-  background-image: url(../img/speakers/bio_genet_jesse.jpg);
+  background-image: url(../img/speakers/bio_hodgman_john.jpg);
 }
 
 .speaker-card:nth-child(2) {
-  background-image: url(../img/speakers/bio_glass_chris.jpg);
+  background-image: url(../img/speakers/bio_genet_jesse.jpg);
 }
 
 .speaker-card:nth-child(3) {
-  background-image: url(../img/speakers/bio_hodgman_john.jpg);
+  background-image: url(../img/speakers/bio_glass_chris.jpg);
 }
 
 .speaker-card:nth-child(4) {
@@ -848,7 +848,7 @@ footer h3 {
     position: static;
   }
 
-  .what .sign-up {
+  .what .go-to-sign-up {
     width: 50%;
   }
 
@@ -935,7 +935,7 @@ footer h3 {
     width: 70%;
   }
 
-  .what .sign-up {
+  .what .go-to-sign-up {
     margin-top: 0;
   }
 
@@ -995,7 +995,6 @@ footer h3 {
   .tito-container {
     float: left;
     margin-top: 140px;
-    width: 60%;
   }
 
   .host-cards-container {
@@ -1078,7 +1077,7 @@ footer h3 {
 
   .show-code-of-conduct {
     margin-left: 10px;
-    width: 445px;
+    width: 96%;
   }
 
   .code-of-conduct.active {
@@ -1139,6 +1138,10 @@ footer h3 {
 
   .container {
     max-width: 1024px;
+  }
+
+  .show-code-of-conduct {
+    width: 445px;
   }
 }
 
