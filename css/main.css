@@ -506,7 +506,7 @@ h1.off-center-title {
 
 .deets h4 {
   font-size: 0.9em;
-  width: 70%;
+  width: 67%;
 }
 
 .deets .directions p {
@@ -705,6 +705,10 @@ footer h3 {
 
 .credits a {
   color: white;
+}
+
+.credits h3 a {
+  color: #ffcdbc;
 }
 
 .credits h3 {
