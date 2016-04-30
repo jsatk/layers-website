@@ -3,13 +3,17 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Jesse Atkinson -- Developer -- @jsatk
+    Grayson Yokota -- Designer
+    Jessie Char -- Copy & Direction -- @jessiechar
+    Elaine Pow -- Copy & Direction -- @epow17
 
 # THANKS
 
-    <name>
+    To the conference partners.
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
     Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Tito, Snazzy Maps, Google Maps
