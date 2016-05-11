@@ -665,6 +665,34 @@ footer h3 {
   background-image: url(../img/speakers/bio_mantia_louie.jpg);
 }
 
+.speaker-card:nth-child(14) {
+  background-image: url(../img/speakers/bio_collier_jessica.jpg);
+}
+
+.speaker-card:nth-child(15) {
+  background-image: url(../img/speakers/bio_dong_linda.jpg);
+}
+
+.speaker-card:nth-child(16) {
+  background-image: url(../img/speakers/bio_napolitano_lia.jpg);
+}
+
+.speaker-card:nth-child(17) {
+  background-image: url(../img/speakers/bio_chien_windy.jpg);
+}
+
+.speaker-card:nth-child(18) {
+  background-image: url(../img/speakers/bio_khoe_may-li.jpg);
+}
+
+.speaker-card:nth-child(19) {
+  background-image: url(../img/speakers/bio_quirino_tim.jpg);
+}
+
+.speaker-card:nth-child(20) {
+  background-image: url(../img/speakers/bio_arriola_georgiana.jpg);
+}
+
 .speaker-card.no-image {
   background-image: url(../img/speakers/bio_andmore.jpg);
 }
