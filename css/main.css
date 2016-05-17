@@ -618,7 +618,7 @@ footer h3 {
 }
 
 .speaker-card:nth-child(2) {
-  background-image: url(../img/speakers/bio_genet_jesse.jpg);
+  background-image: url(../img/speakers/bio_grafera_alexa.jpg);
 }
 
 .speaker-card:nth-child(3) {
@@ -626,39 +626,39 @@ footer h3 {
 }
 
 .speaker-card:nth-child(4) {
-  background-image: url(../img/speakers/bio_macdonald_jean.jpg);
-}
-
-.speaker-card:nth-child(5) {
   background-image: url(../img/speakers/bio_mrgan_christa.jpg);
 }
 
-.speaker-card:nth-child(6) {
-  background-image: url(../img/speakers/bio_murray_nelson.jpg);
+.speaker-card:nth-child(5) {
+  background-image: url(../img/speakers/bio_arriola_georgiana.jpg);
 }
 
-.speaker-card:nth-child(7) {
+.speaker-card:nth-child(6) {
   background-image: url(../img/speakers/bio_price_helena.jpg);
 }
 
-.speaker-card:nth-child(8) {
-  background-image: url(../img/speakers/bio_shipley_wil.jpg);
-}
-
-.speaker-card:nth-child(9) {
-  background-image: url(../img/speakers/bio_slatkin_rebecca.jpg);
-}
-
-.speaker-card:nth-child(10) {
-  background-image: url(../img/speakers/bio_usiyan_tj.jpg);
-}
-
-.speaker-card:nth-child(11) {
+.speaker-card:nth-child(7) {
   background-image: url(../img/speakers/bio_erondu_jared.jpg);
 }
 
+.speaker-card:nth-child(8) {
+  background-image: url(../img/speakers/bio_macdonald_jean.jpg);
+}
+
+.speaker-card:nth-child(9) {
+  background-image: url(../img/speakers/bio_genet_jesse.jpg);
+}
+
+.speaker-card:nth-child(10) {
+  background-image: url(../img/speakers/bio_collier_jessica.jpg);
+}
+
+.speaker-card:nth-child(11) {
+  background-image: url(../img/speakers/bio_napolitano_lia.jpg);
+}
+
 .speaker-card:nth-child(12) {
-  background-image: url(../img/speakers/bio_grafera_alexa.jpg);
+  background-image: url(../img/speakers/bio_dong_linda.jpg);
 }
 
 .speaker-card:nth-child(13) {
@@ -666,32 +666,37 @@ footer h3 {
 }
 
 .speaker-card:nth-child(14) {
-  background-image: url(../img/speakers/bio_collier_jessica.jpg);
-}
-
-.speaker-card:nth-child(15) {
-  background-image: url(../img/speakers/bio_dong_linda.jpg);
-}
-
-.speaker-card:nth-child(16) {
-  background-image: url(../img/speakers/bio_napolitano_lia.jpg);
-}
-
-.speaker-card:nth-child(17) {
-  background-image: url(../img/speakers/bio_chien_windy.jpg);
-}
-
-.speaker-card:nth-child(18) {
   background-image: url(../img/speakers/bio_khoe_may-li.jpg);
 }
 
-.speaker-card:nth-child(19) {
+.speaker-card:nth-child(15) {
+  background-image: url(../img/speakers/bio_johnson_michael_b.jpg);
+}
+
+.speaker-card:nth-child(16) {
+  background-image: url(../img/speakers/bio_murray_nelson.jpg);
+}
+
+.speaker-card:nth-child(17) {
+  background-image: url(../img/speakers/bio_slatkin_rebecca.jpg);
+}
+
+.speaker-card:nth-child(18) {
   background-image: url(../img/speakers/bio_quirino_tim.jpg);
 }
 
-.speaker-card:nth-child(20) {
-  background-image: url(../img/speakers/bio_arriola_georgiana.jpg);
+.speaker-card:nth-child(19) {
+  background-image: url(../img/speakers/bio_usiyan_tj.jpg);
 }
+
+.speaker-card:nth-child(20) {
+  background-image: url(../img/speakers/bio_shipley_wil.jpg);
+}
+
+.speaker-card:nth-child(21) {
+  background-image: url(../img/speakers/bio_chien_windy.jpg);
+}
+
 
 .speaker-card.no-image {
   background-image: url(../img/speakers/bio_andmore.jpg);
