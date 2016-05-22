@@ -8,20 +8,22 @@
   var elms              = {}; // Object that holds all of our jQuery elements.
 
   var cacheElms = function () {
-    elms.$window                 = $(window);
-    elms.$body                   = $('html, body');
-    elms.$hamburgerButton        = $('.hamburger-button');
-    elms.$mobileNav              = $('.wrapper.nav.mobile-only nav');
-    elms.$mobileNavWrapper       = $('.nav.mobile-only');
-    elms.$mobileNavButtonWrapper = $('.nav-buttons-wrapper');
-    elms.$mobileNavLis           = $('.nav.mobile-only li');
-    elms.$desktopNavWrapper      = $('.nav.desktop-only');
-    elms.$scrollToTop            = $('.scroll-to-top');
-    elms.$scrollToSection        = $('.nav nav a[href^="#"]');
-    elms.$what                   = $('.what');
-    elms.$showCodeOfConduct      = $('#show-code-of-conduct');
-    elms.$codeOfCoduct           = $('.code-of-conduct');
-    elms.$signMeUpLink           = $('.go-to-sign-up');
+    elms.$window                  = $(window);
+    elms.$body                    = $('html, body');
+    elms.$hamburgerButton         = $('.hamburger-button');
+    elms.$mobileNav               = $('.wrapper.nav.mobile-only nav');
+    elms.$mobileNavWrapper        = $('.nav.mobile-only');
+    elms.$mobileNavButtonWrapper  = $('.nav-buttons-wrapper');
+    elms.$mobileNavLis            = $('.nav.mobile-only li');
+    elms.$desktopNavWrapper       = $('.nav.desktop-only');
+    elms.$scrollToTop             = $('.scroll-to-top');
+    elms.$scrollToSection         = $('.nav nav a[href^="#"]');
+    elms.$what                    = $('.what');
+    elms.$showCodeOfConduct       = $('#show-code-of-conduct');
+    elms.$showPresentationDetails = $('#show-presentation-details');
+    elms.$codeOfCoduct            = $('.code-of-conduct');
+    elms.$presentationDetails     = $('.presentation-details');
+    elms.$signMeUpLink            = $('.go-to-sign-up');
   };
 
   var getMobileNavHeight = function () {
@@ -131,6 +133,11 @@
     elms.$showCodeOfConduct.on('click', function (event) {
       event.preventDefault();
       elms.$codeOfCoduct.toggleClass('active');
+    });
+
+    elms.$showPresentationDetails.on('click', function (event) {
+      event.preventDefault();
+      elms.$presentationDetails.toggleClass('active');
     });
   });
 })(jQuery, this);

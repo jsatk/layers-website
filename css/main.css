@@ -487,6 +487,10 @@ h1.off-center-title {
   font-size: 1.3em;
 }
 
+.presentation-wrapper {
+  clear: left;
+}
+
 .deets {
   padding-bottom: 180px;
 }
@@ -585,6 +589,7 @@ footer h4 {
 
 h4,
 .sponsor-card .name,
+.presentation-details h3,
 .host-card .name {
   font-family: TTProstoSansCondensed-Black;
   font-size: 1.4em;
@@ -710,6 +715,7 @@ footer h3 {
 }
 
 .tito-submit-wrapper button,
+.show-presentation-details,
 .show-code-of-conduct {
   display: inline-block;
   font-family: TTProstoSansCondensed-Bold;
@@ -718,6 +724,29 @@ footer h3 {
   text-align: center;
   text-transform: uppercase;
   width: 100%;
+}
+
+.show-presentation-details {
+  background: #657db7;
+  color: white;
+}
+
+.presentation-details {
+  display: none;
+}
+
+.presentation-details.active {
+  display: block;
+}
+
+.presentation-details h3 {
+  color: #ffcebd;
+}
+
+.presentation-details p {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.35em;
 }
 
 .show-code-of-conduct {
