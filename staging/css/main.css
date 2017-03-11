@@ -1,0 +1,1318 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*
+  List of custom font names to use in the `font-family` tag
+  TTProstoSansCondensed-Black
+  TTProstoSansCondensed-Italic
+  TTProstoSansCondensed-Bold
+  TTProstoSansCondensed-LightItalic
+  TTProstoSansCondensed-BlackItalic
+  TTProstoSansCondensed-BoldItalic
+  TTProstoSansCondensed-Light
+  TTProstoSansCondensed-Regular
+  TTProstoSansCondensed-Thin
+  TTProstoSansCondensed-ThinItalic
+*/
+
+html,
+body {
+  background: #212c5b;
+  font-family: TTProstoSansCondensed-Regular;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+}
+
+.wrapper,
+.container {
+  margin: 0 auto;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 80%;
+}
+
+header,
+.speakers {
+  background: #2a3470;
+}
+
+header {
+  background-image: url('../img/bg.gif');
+}
+
+header .wrapper {
+  background-image: url('../img/headline/top.svg'), url('../img/headline/middle.svg'), url('../img/headline/bottom.svg');
+  background-position: top center, center center, bottom center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 70% auto, 70% auto, 70% auto;
+}
+
+.header-image {
+  margin-bottom: 42px;
+  margin-top: 215px;
+}
+
+.nav .scroll-to-top {
+  cursor: pointer;
+  display: inline;
+}
+
+header .logo {
+  margin-top: 28px;
+}
+
+header h1,
+header h3 {
+  color: #ffcebd;
+}
+
+header h1 {
+  font-size: 110px;
+  margin: 128px 0 0;
+}
+
+header h2 {
+  font-size: 1em;
+  margin-top: -24px;
+  margin-bottom: 35px;
+}
+
+header h3 {
+  font-family: TTProstoSansCondensed-Bold;
+  font-size: 1em;
+  letter-spacing: 2px;
+  margin-bottom: 115px;
+}
+
+footer {
+  padding-bottom: 200px;
+}
+
+footer,
+.what {
+  background: #212c5b;
+}
+
+.deets {
+  background: #5166a8;
+}
+
+.deets section:nth-child(2) .copy {
+  background-size: 193px 179px;
+}
+
+footer,
+.deets p {
+  color: #ffcdbc;
+}
+
+.sign-up {
+  background: #657db7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  font-family: TTProstoSansCondensed-Black;
+}
+
+h2 {
+  color: white;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: white;
+  font-family: TTProstoSansCondensed-Black;
+  letter-spacing: 2px;
+  margin-bottom: -10px;
+  padding-top: 15px;
+}
+
+.what {
+  margin-bottom: 93px;
+}
+
+.what .copy {
+  font-size: 2em;
+  line-height: 1.25em;
+}
+
+.what .copy {
+  margin-top: 120px;
+}
+
+.what p {
+  color: #ffcebd;
+  font-family: TTProstoSansCondensed-Bold;
+  font-size: 0.75em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  width: 95%;
+}
+
+.what p:first-child {
+  margin-bottom: -17px;
+}
+
+.what .go-to-sign-up {
+  background: #657db7;
+  color: white;
+  display: inline-block;
+  font-family: TTProstoSansCondensed-Bold;
+  font-size: 0.45em;
+  line-height: 2em;
+  margin-bottom: 64px;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.mobile-only.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: background-color 1s;
+  z-index: 2;
+}
+
+.mobile-only.nav.get-background-color,
+.nav.desktop-only {
+  background: #212c5b;
+}
+
+.nav.desktop-only {
+  margin-top: 0;
+  padding: 10px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.nav .logo {
+  margin-top: 30px;
+}
+
+.nav-buttons-wrapper {
+  padding-bottom: 22px;
+}
+
+.hamburger-button {
+  margin-top: 35px;
+}
+
+.nav a {
+  display: block;
+}
+
+.hamburger-button {
+  cursor: pointer;
+  float: right;
+  padding: 10px 35px 16px 0px;
+}
+
+.hamburger-button span,
+.hamburger-button span:before,
+.hamburger-button span:after {
+  background: #ffcebd;
+  border-radius: 1px;
+  content: '';
+  cursor: pointer;
+  display: block;
+  height: 2px;
+  position: absolute;
+  width: 35px;
+}
+
+.hamburger-button span:before {
+  top: -10px;
+}
+
+.hamburger-button span:after {
+  bottom: -10px;
+}
+
+.hamburger-button span,
+.hamburger-button span:before,
+.hamburger-button span:after {
+  transition: all 500ms ease-in-out;
+}
+
+.hamburger-button.active span {
+  background-color: transparent;
+}
+
+.hamburger-button.active span:before,
+.hamburger-button.active span:after {
+  top: 0;
+}
+
+.hamburger-button.active span:before {
+  transform: rotate(45deg);
+}
+
+.hamburger-button.active span:after {
+  transform: rotate(-45deg);
+}
+
+.back-to-top {
+  display: none;
+}
+
+nav {
+  height: 0;
+  text-transform: uppercase;
+  -webkit-transition: height 200ms ease-in;
+  -moz-transition: height 200ms ease-in;
+  -o-transition: height 200ms ease-in;
+  transition: height 200ms ease-in;
+}
+
+nav.active {
+  height: 575px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  font-family: TTProstoSansCondensed-Black;
+  font-size: 2em;
+  line-height: 3em;
+  list-style: none;
+}
+
+.mobile-only nav li:first-child,
+.mobile-only nav li:last-child {
+  background: #212c5b;
+}
+
+.mobile-only nav li:nth-child(2) {
+  background: #2a3470;
+}
+
+.mobile-only nav li:nth-child(3) {
+  background: #5166a8;
+}
+
+.mobile-only nav li:nth-child(4) {
+  background: #657db7;
+}
+
+.mobile-only nav li:nth-child(odd) a {
+  color: #ffcebd;
+}
+
+.mobile-only nav li:nth-child(2) a {
+  color: #667cb7;
+}
+
+.mobile-only nav li:nth-child(4) a {
+  color: #212c5b;
+}
+
+.speakers h1,
+.speakers h2 {
+  color: #667cb7;
+}
+
+h1.off-center-title {
+  font-size: 4em;
+  line-height: 0.95;
+  margin-top: 128px;
+  margin-bottom: 0;
+}
+
+.speakers {
+  padding-bottom: 116px;
+}
+
+.speakers h2 {
+  font-family: TTProstoSansCondensed-Bold;
+  font-size: 1.2em;
+  text-transform: none;
+  line-height: 1.1em;
+  margin-top: 10px;
+}
+
+.speakers section:nth-child(2) {
+  margin-top: 50px;
+}
+
+.speaker-card {
+  background: linear-gradient(to bottom, #26306d 60%, transparent 40%) no-repeat;
+  background-size: 100%;
+  color: #ffcebd;
+  height: 144px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.speaker-card > div {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+
+.speaker-card .name {
+  font-family: TTProstoSansCondensed-Black;
+  font-size: 1.6em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.speaker-card .subtitle {
+  color: white;
+  font-family: TTProstoSansCondensed-Italic;
+  font-size: 1.3em;
+}
+
+.presentation-wrapper {
+  clear: left;
+}
+
+.deets {
+  padding-bottom: 180px;
+}
+
+.deets .copy {
+  font-family: TTProstoSansCondensed-Bold;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  margin-top: 32px;
+}
+
+.deets h1 {
+  color: #212c5b;
+  margin-bottom: 50px;
+  margin-top: 118px;
+}
+
+.deets h4 {
+  font-size: 0.9em;
+  width: 67%;
+}
+
+.deets .directions p {
+  color: #fcffff;
+  font-family: TTProstoSansCondensed-Regular;
+}
+
+.deets .directions p:last-child {
+  line-height: 1.35em;
+}
+
+.deets .google-map {
+  margin-top: 60px;
+}
+
+.deets .directions .copy {
+  margin-top: 60px;
+}
+
+.deets .directions p:first-child {
+  text-transform: uppercase;
+}
+
+.deets .directions small {
+  font-family: TTProstoSansCondensed-Thin;
+  text-transform: none;
+}
+
+.deets .directions a,
+.deets .directions a:visited {
+  color: white;
+}
+
+.deets .copy p a {
+  color: white;
+}
+
+strong {
+  font-family: TTProstoSansCondensed-Bold;
+  text-transform: uppercase;
+}
+
+.sign-up {
+  padding-bottom: 144px;
+}
+
+.sign-up h1 {
+  color: #ffcdbc;
+  margin-bottom: 30px;
+}
+
+footer h1.off-center-title {
+  font-size: 3em;
+  line-height: 0.9em;
+  margin-bottom: 60px;
+  margin-left: 7px;
+  margin-top: 114px;
+  white-space: nowrap;
+}
+
+.host-card {
+  margin-bottom: 80px;
+}
+
+footer .bio p {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.35em;
+  margin-top: 8px;
+  width: 90%;
+}
+
+footer h4 {
+  color: #ffcdbc;
+}
+
+h4,
+.sponsor-card .name,
+.presentation-details h3,
+.host-card .name {
+  font-family: TTProstoSansCondensed-Black;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 38px;
+}
+
+.sponsor-card .name {
+  font-size: 1.2em;
+}
+
+.sponsors {
+  margin-top: 93px;
+}
+
+footer h3 {
+  font-size: 1.3em;
+  font-family: TTProstoSansCondensed-Black;
+  margin-bottom: -10px;
+}
+
+.map {
+  background: #212c5b;
+  height: 500px;
+  width: 500px;
+}
+
+.speaker-card:first-child {
+  background-image: url(../img/speakers/bio_hodgman_john.jpg);
+}
+
+.speaker-card:nth-child(2) {
+  background-image: url(../img/speakers/bio_grafera_alexa.jpg);
+}
+
+.speaker-card:nth-child(3) {
+  background-image: url(../img/speakers/bio_rith_chanpory.jpg);
+}
+
+.speaker-card:nth-child(4) {
+  background-image: url(../img/speakers/bio_glass_chris.jpg);
+}
+
+.speaker-card:nth-child(5) {
+  background-image: url(../img/speakers/bio_mrgan_christa.jpg);
+}
+
+.speaker-card:nth-child(6) {
+  background-image: url(../img/speakers/bio_arriola_georgiana.jpg);
+}
+
+.speaker-card:nth-child(7) {
+  background-image: url(../img/speakers/bio_price_helena.jpg);
+}
+
+.speaker-card:nth-child(8) {
+  background-image: url(../img/speakers/bio_erondu_jared.jpg);
+}
+
+.speaker-card:nth-child(9) {
+  background-image: url(../img/speakers/bio_macdonald_jean.jpg);
+}
+
+.speaker-card:nth-child(10) {
+  background-image: url(../img/speakers/bio_ngo_jeany.jpg);
+}
+
+.speaker-card:nth-child(11) {
+  background-image: url(../img/speakers/bio_genet_jesse.jpg);
+}
+
+.speaker-card:nth-child(12) {
+  background-image: url(../img/speakers/bio_collier_jessica.jpg);
+}
+
+.speaker-card:nth-child(13) {
+  background-image: url(../img/speakers/bio_napolitano_lia.jpg);
+}
+
+.speaker-card:nth-child(14) {
+  background-image: url(../img/speakers/bio_dong_linda.jpg);
+}
+
+.speaker-card:nth-child(15) {
+  background-image: url(../img/speakers/bio_mantia_louie.jpg);
+}
+
+.speaker-card:nth-child(16) {
+  background-image: url(../img/speakers/bio_khoe_may-li.jpg);
+}
+
+.speaker-card:nth-child(17) {
+  background-image: url(../img/speakers/bio_johnson_michael_b.jpg);
+}
+
+.speaker-card:nth-child(18) {
+  background-image: url(../img/speakers/bio_murray_nelson.jpg);
+}
+
+.speaker-card:nth-child(19) {
+  background-image: url(../img/speakers/bio_slatkin_rebecca.jpg);
+}
+
+.speaker-card:nth-child(20) {
+  background-image: url(../img/speakers/bio_quirino_tim.jpg);
+}
+
+.speaker-card:nth-child(21) {
+  background-image: url(../img/speakers/bio_usiyan_tj.jpg);
+}
+
+.speaker-card:nth-child(22) {
+  background-image: url(../img/speakers/bio_shipley_wil.jpg);
+}
+
+.speaker-card:nth-child(23) {
+  background-image: url(../img/speakers/bio_chien_windy.jpg);
+}
+
+.speaker-card.no-image {
+  background-image: url(../img/speakers/bio_andmore.jpg);
+}
+
+.tito-submit-wrapper button,
+.show-presentation-details,
+.show-code-of-conduct {
+  display: inline-block;
+  font-family: TTProstoSansCondensed-Bold;
+  line-height: 2em;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.show-presentation-details {
+  background: #657db7;
+  color: white;
+}
+
+.presentation-details {
+  display: none;
+}
+
+.presentation-details.active {
+  display: block;
+}
+
+.presentation-details h3 {
+  color: #ffcebd;
+}
+
+.presentation-details p {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.35em;
+}
+
+.show-code-of-conduct {
+  background: #ffcdbc;
+  color: #212c5b;
+}
+
+.tito-container input {
+  color: black;
+}
+
+.tito-submit-wrapper button {
+  color: #ffcdbc;
+}
+
+.code-of-conduct {
+  color: #ffcdbc;
+  height: 0;
+  margin-top: 40px;
+  -webkit-transition: height 200ms ease-in;
+  -moz-transition: height 200ms ease-in;
+  -o-transition: height 200ms ease-in;
+  transition: height 200ms ease-in;
+}
+
+.code-of-conduct a,
+.code-of-conduct strong {
+  color: white;
+}
+
+.code-of-conduct a {
+  font-family: TTProstoSansCondensed-Bold;
+}
+
+.code-of-conduct p {
+  font-size: 1.2em;
+  line-height: 1.35em;
+}
+
+.code-of-conduct.active {
+  height: 2600px;
+}
+
+.credits {
+  clear: both;
+  padding-top: 100px;
+  text-transform: uppercase;
+}
+
+.credits a {
+  color: white;
+}
+
+.credits h3 a {
+  color: #ffcdbc;
+}
+
+.credits h3 {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+/* TITO OVERRIDES */
+.tito-wrapper {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.tito-ticket-price-quantity-wrapper,
+.tito-ticket-status,
+.tito-ticket-status-sold-out,
+.tito-ticket-name-wrapper {
+  border-bottom: 1px solid #ffcdbc;
+}
+
+.tito-wrapper a {
+  color: #ffcdbc;
+}
+
+.tito-badge-link {
+  text-align: right;
+}
+
+.tito-submit {
+  background: #212c5b;
+  border-radius: 0;
+  border: none;
+}
+
+.tito-ticket-quantity-field {
+  color: black;
+  font-size: 1em;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media all and (min-width: 374px) {
+  .code-of-conduct.active {
+    height: 2200px;
+  }
+}
+
+/* All previous styles styled following layers_web2016_mobile_0_560.jpg */
+
+/* layers_web2016_tab_561_820.jpg */
+@media all and (min-width: 561px) {
+  h1.off-center-title {
+    font-size: 6em;
+  }
+
+  section {
+    position: static;
+  }
+
+  .what .go-to-sign-up {
+    width: 50%;
+  }
+
+  .speaker-card,
+  .sponsor-card {
+    width: 49%;
+  }
+
+  .speaker-card:nth-child(odd),
+  .sponsor-card:nth-child(odd) {
+    float: left;
+  }
+
+  .speaker-card:nth-child(even),
+  .sponsor-card:nth-child(even) {
+    float: right;
+  }
+
+  header h2,
+  header h3 {
+    font-size: 1.4em;
+  }
+
+  .code-of-conduct.active {
+    height: 1560px;
+  }
+}
+
+/* layers_web2016_max_821_1024.jpg */
+@media all and (min-width: 821px) {
+  p {
+    font-size: 0.8em;
+  }
+
+  section {
+    position: relative;
+    z-index: 1;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
+  .header-image {
+    width: 58%;
+  }
+
+  .nav {
+    margin-top: 20px;
+    overflow: hidden;
+    top: 0;
+  }
+
+  .nav .logo {
+    margin: 0;
+  }
+
+  nav li {
+    float: left;
+    font-size: 0.75em;
+    margin-left: 6.5%;
+  }
+
+  nav li:first-child {
+    margin-left: 0;
+  }
+
+  nav a {
+    color: white;
+    letter-spacing: 2px;
+    line-height: 3.5em;
+  }
+
+  .what section:last-child {
+    background: url(../img/section_graphics/graphic_intro.svg) top right no-repeat;
+    background-size: 193px 179px;
+  }
+
+  .what .copy {
+    width: 70%;
+  }
+
+  .what .go-to-sign-up {
+    margin-top: 0;
+  }
+
+  .speaker-cards-container {
+    float: right;
+    width: 70%;
+  }
+
+  .speakers section:first-child img {
+    margin-left: 80px;
+    margin-top: 40px;
+  }
+
+  .deets .copy {
+    float: right;
+    width: 69.2%; /* I hate CSS so much right now */
+    margin-top: 55px;
+  }
+
+  /* Begin odd overlaying stuff */
+  .speakers .container,
+  .deets .container,
+  .sign-up .container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .speakers section:first-child,
+  .deets section:first-child {
+    position: absolute;
+  }
+
+  .speakers section:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .speakers section.speaker-cards-container {
+    margin-top: 165px;
+  }
+
+  .google-map {
+    clear: right;
+    height: 440px; /* Height of the map */
+    position: relative;
+  }
+
+  .google-map .directions {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .sign-up h1 {
+    float: left;
+  }
+
+  .tito-container {
+    float: left;
+    margin-top: 140px;
+  }
+
+  .host-cards-container {
+    overflow: hidden;
+  }
+
+  .sign-up section:first-child,
+  .host-cards-container section:first-child {
+    float: left;
+    width: 30%;
+  }
+
+  .sign-up section:last-child,
+  .host-cards-container section:last-child {
+    float: right;
+    width: 69.2%;
+  }
+
+  .host-cards-container section:last-child {
+    margin-top: 140px;
+  }
+
+  .sponsor-card {
+    float: right;
+    height: 250px;
+  }
+
+  .sponsor-card:nth-child(odd),
+  .sponsor-card:nth-child(even) {
+    float: left;
+  }
+
+  .sponsor-card.half-card {
+    float: right;
+    height: 125px;
+  }
+
+  .sponsors {
+    float: right;
+    width: 60%;
+  }
+
+  .sign-up img {
+    display: none;
+  }
+
+  .deets section:nth-child(2) .copy {
+    background: url(../img/section_graphics/graphic_deets.svg) left center no-repeat;
+    background-size: 193px 179px;
+  }
+
+  .speakers {
+    padding-top: 20px;
+  }
+
+  .speaker-card .name {
+    font-size: 1.3em;
+  }
+
+  .speaker-card .subtitle {
+    font-size: 1em;
+  }
+
+  .speaker-card > div {
+    margin-top: -23px;
+  }
+
+  .speakers h2 {
+    font-size: 1.5em;
+    margin-left: 80px;
+  }
+
+  .deets {
+    padding-top: 90px;
+  }
+
+  .deets h1 {
+    margin-top: 40px;
+  }
+
+  .show-code-of-conduct {
+    margin-left: 10px;
+    width: 96%;
+  }
+
+  .code-of-conduct.active {
+    height: 1750px;
+  }
+}
+
+/* layers_web2016_max_1024.jpg */
+@media all and (min-width: 1024px) {
+  nav li {
+    margin-left: 104px;
+  }
+
+  .speaker-card {
+    float: left !important;
+    margin-left: 1%;
+    width: 32%;
+  }
+
+  .deets h4 {
+    float: right;
+  }
+
+  .deets p {
+    clear: right;
+    float: right;
+    width: 67%; /* CSS is stupid */
+  }
+
+  .tito-container {
+    width: 465px;
+  }
+
+  .sign-up img {
+    display: block;
+    float: left;
+    margin-left: 2%;
+    margin-top: 160px;
+  }
+
+  .sponsors,
+  .host-cards-container section:last-child {
+    width: 70%;
+  }
+
+  .host-card {
+    float: left;
+    width: 50%;
+  }
+
+  .sponsor-card {
+    width: 33%;
+  }
+
+  .code-of-conduct.active {
+    height: 1240px;
+  }
+
+  .container {
+    max-width: 1024px;
+  }
+
+  .show-code-of-conduct {
+    width: 445px;
+  }
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster:
+                                http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+    * Don't show links that are fragment identifiers,
+    * or use the `javascript:` pseudo protocol
+    */
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+    * Printing Tables:
+    * http://css-discuss.incutio.com/wiki/Printing_Tables
+    */
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
