@@ -110,14 +110,6 @@
     desktopStickNav();
   };
 
-  var getMobileNavLiLineHeight = function () {
-    var liCount    = elms.$mobileNavLis.length;
-    var ulHeight   = elms.$window.height() - elms.$mobileNavButtonWrapper.outerHeight(true);
-    var lineHeight = ulHeight / liCount + 'px';
-
-    elms.$mobileNavLis.css('lineHeight', lineHeight);
-  };
-
   $(document).on('ready', function () {
     cacheElms();
     setGlobalVars();
@@ -125,10 +117,8 @@
     scrollToSections();
     transitionNavBarBackgroundOnMobile();
     desktopStickNav();
-    getMobileNavLiLineHeight();
 
     // On resize re-calculate and set the height of the mobile nav item heights
-    elms.$window.on('resize', getMobileNavLiLineHeight);
     elms.$window.on('scroll', callOnWindowScroll);
     elms.$showCodeOfConduct.on('click', function (event) {
       event.preventDefault();
