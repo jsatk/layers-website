@@ -97,21 +97,30 @@ textarea {
 
 /*
   List of custom font names to use in the `font-family` tag
+  # Super Narrow Stuff
+  RamaGothicC-SemiBold
+
+  # Everything Else
   TTProstoSansCondensed-Black
   TTProstoSansCondensed-Italic
   TTProstoSansCondensed-Bold
-  TTProstoSansCondensed-LightItalic
-  TTProstoSansCondensed-BlackItalic
-  TTProstoSansCondensed-BoldItalic
-  TTProstoSansCondensed-Light
   TTProstoSansCondensed-Regular
-  TTProstoSansCondensed-Thin
-  TTProstoSansCondensed-ThinItalic
 */
+
+/*
+  List of colors we're using
+  #ec6561   LIGHT RED
+  #c54851   DARK RED
+  #25235a   DARK BLUE
+  #edf1f2   LIGHT GRAY
+  #e3e5e5   MID GRAY
+  #bfbfbf   DARK GRAY
+*/
+
 
 html,
 body {
-  background: #212c5b;
+  background: #e3e5e5;
   font-family: TTProstoSansCondensed-Regular;
 }
 
@@ -138,18 +147,15 @@ section {
 
 header,
 .speakers {
-  background: #2a3470;
+  background: #e3e5e5;
 }
 
 header {
-  background-image: url('../img/bg.gif');
+  background-image: url('../img/');
 }
 
 header .wrapper {
-  background-image: url('../img/headline/top.svg'), url('../img/headline/middle.svg'), url('../img/headline/bottom.svg');
-  background-position: top center, center center, bottom center;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: 70% auto, 70% auto, 70% auto;
+  background-image: url('../img/');
 }
 
 .header-image {
