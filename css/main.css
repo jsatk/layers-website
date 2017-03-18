@@ -151,7 +151,9 @@ header,
 }
 
 header {
-  background-image: url('../img/');
+  background: url('../img/logos/herolockup_2col-small.svg') top center no-repeat;
+  margin-top: 85px;
+  min-height: 700px;
 }
 
 header .wrapper {
@@ -297,13 +299,37 @@ h4 {
   position: fixed;
   top: 0;
   width: 100%;
-  transition: background-color 1s;
   z-index: 2;
 }
 
+.mobile-only.nav .scroll-to-top {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s linear 0.3s, opacity 1s linear;
+}
+
+.mobile-only.nav.get-background-color .scroll-to-top {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.mobile-only.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: background-color 0.3s;
+  z-index: 2;
+}
+
+/*
+ * `.active` tells us the menu is open
+ * `.get-background-color` tells us we have scrolled past the header
+ */
 .mobile-only.nav.get-background-color,
+.mobile-only.nav.active,
 .nav.desktop-only {
-  background: #212c5b;
+  background: #e3e5e5;
 }
 
 .nav.desktop-only {
@@ -338,7 +364,7 @@ h4 {
 .hamburger-button span,
 .hamburger-button span:before,
 .hamburger-button span:after {
-  background: #ffcebd;
+  background: #ec6561;
   border-radius: 1px;
   content: '';
   cursor: pointer;
@@ -404,37 +430,22 @@ nav ul {
 nav li {
   font-family: TTProstoSansCondensed-Black;
   font-size: 2em;
-  line-height: 3em;
   list-style: none;
 }
 
-.mobile-only nav li:first-child,
-.mobile-only nav li:last-child {
-  background: #212c5b;
+.mobile-only nav {
+  background: #e3e5e5; /* TODO: Maybe can delete? */
 }
 
-.mobile-only nav li:nth-child(2) {
-  background: #2a3470;
+.mobile-only nav li {
+  font-family: RamaGothicC-SemiBold;
+  font-size: 5em;
+  font-style: normal;
+  font-weight: normal;
 }
 
-.mobile-only nav li:nth-child(3) {
-  background: #5166a8;
-}
-
-.mobile-only nav li:nth-child(4) {
-  background: #657db7;
-}
-
-.mobile-only nav li:nth-child(odd) a {
-  color: #ffcebd;
-}
-
-.mobile-only nav li:nth-child(2) a {
-  color: #667cb7;
-}
-
-.mobile-only nav li:nth-child(4) a {
-  color: #212c5b;
+.mobile-only nav li a {
+  color: #25235a;
 }
 
 .speakers h1,

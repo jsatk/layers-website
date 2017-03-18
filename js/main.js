@@ -44,6 +44,7 @@
   var toggleActiveMobileNav = function () {
     elms.$hamburgerButton.toggleClass('active');
     elms.$mobileNav.toggleClass('active');
+    elms.$mobileNavWrapper.toggleClass('active');
     setMobileNavHeight();
   };
 
