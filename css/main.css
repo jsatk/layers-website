@@ -488,12 +488,19 @@ nav li a {
 }
 
 .speaker-card {
-  /* background: linear-gradient(to bottom, #26306d 60%, transparent 40%) no-repeat; */
-  /* background-size: 100%; */
-  /* color: #ffcebd; */
-  /* height: 144px; */
-  /* padding-left: 15px; */
-  /* position: relative; */
+  width: 80%;
+}
+
+.speaker-card.no-image {
+  background-image: url(../img/speakers/bio_andmore.jpg);
+}
+
+.speaker-card:nth-child(odd) {
+  float: left;
+}
+
+.speaker-card:nth-child(even) {
+  float: right;
 }
 
 .speaker-card .name {
@@ -508,7 +515,6 @@ nav li a {
 .image-wrapper {
   position: relative;
   min-height: 250px; /* TODO: This is hot garbage */
-  width: 80%;
 }
 
 .image-wrapper img {
@@ -621,10 +627,6 @@ footer h3 {
   background: #212c5b;
   height: 500px;
   width: 500px;
-}
-
-.speaker-card.no-image {
-  background-image: url(../img/speakers/bio_andmore.jpg);
 }
 
 .tito-submit-wrapper button,
