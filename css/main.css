@@ -120,12 +120,12 @@ textarea {
 
 html,
 body {
-  background: #e3e5e5;
+  background: #edf1f2;
   font-family: TTProstoSansCondensed-Regular;
 }
 
-a {
-  text-decoration: none;
+img.photo {
+  filter: grayscale(100%);
 }
 
 section {
@@ -145,24 +145,15 @@ section {
   max-width: 80%;
 }
 
-header,
-.speakers {
+header {
   background: #e3e5e5;
 }
 
 header {
-  background: url('../img/logos/herolockup_2col-small.svg') top center no-repeat;
+  background: url('../img/patterns_stripe/light_to_dark.svg') 0 100px repeat-x transparent;
   margin-top: 85px;
+  padding-bottom: 120px;
   min-height: 700px;
-}
-
-header .wrapper {
-  background-image: url('../img/');
-}
-
-.header-image {
-  margin-bottom: 42px;
-  margin-top: 215px;
 }
 
 .nav .scroll-to-top {
@@ -201,26 +192,20 @@ footer {
   padding-bottom: 200px;
 }
 
-footer,
-.what {
-  background: #212c5b;
-}
-
-.deets {
-  background: #5166a8;
-}
-
 .deets section:nth-child(2) .copy {
   background-size: 193px 179px;
 }
 
-footer,
 .deets p {
-  color: #ffcdbc;
+  font-family: TTProstoSansCondensed-Regular;
 }
 
-.sign-up {
-  background: #657db7;
+footer {
+  color: #ec6561;
+}
+
+.deets p {
+  color: #25235a;
 }
 
 h1,
@@ -230,29 +215,49 @@ h4,
 h5,
 h6 {
   font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
   text-transform: uppercase;
 }
 
 h1,
 h2 {
-  font-family: TTProstoSansCondensed-Black;
+  color: #ec6561;
+  font-size: 4em;
+  font-family: RamaGothicC-SemiBold;
+}
+
+h1 {
+  line-height: 0.95;
+  margin-top: 128px;
+  margin-bottom: 0;
 }
 
 h2 {
-  color: white;
+  letter-spacing: 3px;
+  line-height: 0.8em;
+  margin: 0;
   text-transform: uppercase;
 }
 
 h4 {
-  color: white;
   font-family: TTProstoSansCondensed-Black;
   letter-spacing: 2px;
   margin-bottom: -10px;
   padding-top: 15px;
+  margin: 0;
 }
 
 .what {
-  margin-bottom: 93px;
+  padding-bottom: 93px;
+  background-color: #e3e5e5;
+}
+
+.what h2 {
+  margin-bottom: 20px;
 }
 
 .what .copy {
@@ -260,35 +265,43 @@ h4 {
   line-height: 1.25em;
 }
 
-.what .copy {
-  margin-top: 120px;
-}
-
 .what p {
-  color: #ffcebd;
+  color: #25235a;
   font-family: TTProstoSansCondensed-Bold;
-  font-size: 0.75em;
+  font-size: 0.65em;
   line-height: 1.3em;
+  margin-top: 0;
   text-transform: uppercase;
   width: 95%;
 }
 
-.what p:first-child {
-  margin-bottom: -17px;
-}
-
-.what .go-to-sign-up {
-  background: #657db7;
+.what .go-to-sign-up,
+.sign-up .show-code-of-conduct {
+  background-position: top left;
+  background-color: transparent;
+  background-size: 100%;
   color: white;
   display: inline-block;
   font-family: TTProstoSansCondensed-Bold;
-  font-size: 0.45em;
-  line-height: 2em;
   margin-bottom: 64px;
-  padding: 0;
+  margin-left: -25px;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   width: 100%;
+}
+
+.what .go-to-sign-up {
+  font-size: 0.52em;
+  padding: 0 0 17px 10px;
+  background-image: url('../img/buttons/button_signmeup.svg');
+}
+
+.sign-up .show-code-of-conduct {
+  font-size: 1.3em;
+  background-image: url('../img/buttons/button_codeofconduct.svg');
+  margin-top: 50px;
+  padding: 6px 0 35px 15px;
 }
 
 .desktop-only {
@@ -433,6 +446,10 @@ nav li {
   list-style: none;
 }
 
+nav li a {
+  text-decoration: none;
+}
+
 .mobile-only nav {
   background: #e3e5e5; /* TODO: Maybe can delete? */
 }
@@ -453,14 +470,8 @@ nav li {
   color: #667cb7;
 }
 
-h1.off-center-title {
-  font-size: 4em;
-  line-height: 0.95;
-  margin-top: 128px;
-  margin-bottom: 0;
-}
-
 .speakers {
+  background: url('../img/patterns_stripe/dark_to_light.svg') 0 0 repeat-x transparent;
   padding-bottom: 116px;
 }
 
@@ -477,31 +488,50 @@ h1.off-center-title {
 }
 
 .speaker-card {
-  background: linear-gradient(to bottom, #26306d 60%, transparent 40%) no-repeat;
-  background-size: 100%;
-  color: #ffcebd;
-  height: 144px;
-  padding-left: 15px;
-  position: relative;
-}
-
-.speaker-card > div {
-  position: absolute;
-  top: 50%;
-  margin-top: -15px;
+  /* background: linear-gradient(to bottom, #26306d 60%, transparent 40%) no-repeat; */
+  /* background-size: 100%; */
+  /* color: #ffcebd; */
+  /* height: 144px; */
+  /* padding-left: 15px; */
+  /* position: relative; */
 }
 
 .speaker-card .name {
+  color: #ec6561;
   font-family: TTProstoSansCondensed-Black;
-  font-size: 1.6em;
-  line-height: 1em;
+  font-size: 1.3em;
+  line-height: 1.2em;
   text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.image-wrapper {
+  position: relative;
+  min-height: 250px; /* TODO: This is hot garbage */
+  width: 80%;
+}
+
+.image-wrapper img {
+  height: 238px;
+  left: -10px;
+  position: absolute;
+  top: 10px;
+  width: 238px;
+}
+
+.image-wrapper .image-square {
+  border: 1px solid #ec6561;
+  height: 238px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 238px;
+  z-index: 1;
 }
 
 .speaker-card .subtitle {
-  color: white;
+  color: #25235a;
   font-family: TTProstoSansCondensed-Italic;
-  font-size: 1.3em;
 }
 
 .presentation-wrapper {
@@ -519,50 +549,13 @@ h1.off-center-title {
   margin-top: 32px;
 }
 
-.deets h1 {
-  color: #212c5b;
-  margin-bottom: 50px;
-  margin-top: 118px;
-}
-
 .deets h4 {
   font-size: 0.9em;
   width: 67%;
 }
 
-.deets .directions p {
-  color: #fcffff;
-  font-family: TTProstoSansCondensed-Regular;
-}
-
-.deets .directions p:last-child {
-  line-height: 1.35em;
-}
-
-.deets .google-map {
-  margin-top: 60px;
-}
-
-.deets .directions .copy {
-  margin-top: 60px;
-}
-
-.deets .directions p:first-child {
-  text-transform: uppercase;
-}
-
-.deets .directions small {
-  font-family: TTProstoSansCondensed-Thin;
-  text-transform: none;
-}
-
-.deets .directions a,
-.deets .directions a:visited {
-  color: white;
-}
-
 .deets .copy p a {
-  color: white;
+  color: #25235a;
 }
 
 strong {
@@ -593,18 +586,13 @@ footer h1.off-center-title {
 }
 
 footer .bio p {
-  color: white;
+  color: #25235a;
   font-size: 1.2em;
   line-height: 1.35em;
   margin-top: 8px;
   width: 90%;
 }
 
-footer h4 {
-  color: #ffcdbc;
-}
-
-h4,
 .sponsor-card .name,
 .presentation-details h3,
 .host-card .name {
@@ -635,105 +623,12 @@ footer h3 {
   width: 500px;
 }
 
-.speaker-card:first-child {
-  background-image: url(../img/speakers/bio_hodgman_john.jpg);
-}
-
-.speaker-card:nth-child(2) {
-  background-image: url(../img/speakers/bio_grafera_alexa.jpg);
-}
-
-.speaker-card:nth-child(3) {
-  background-image: url(../img/speakers/bio_rith_chanpory.jpg);
-}
-
-.speaker-card:nth-child(4) {
-  background-image: url(../img/speakers/bio_glass_chris.jpg);
-}
-
-.speaker-card:nth-child(5) {
-  background-image: url(../img/speakers/bio_mrgan_christa.jpg);
-}
-
-.speaker-card:nth-child(6) {
-  background-image: url(../img/speakers/bio_arriola_georgiana.jpg);
-}
-
-.speaker-card:nth-child(7) {
-  background-image: url(../img/speakers/bio_price_helena.jpg);
-}
-
-.speaker-card:nth-child(8) {
-  background-image: url(../img/speakers/bio_erondu_jared.jpg);
-}
-
-.speaker-card:nth-child(9) {
-  background-image: url(../img/speakers/bio_macdonald_jean.jpg);
-}
-
-.speaker-card:nth-child(10) {
-  background-image: url(../img/speakers/bio_ngo_jeany.jpg);
-}
-
-.speaker-card:nth-child(11) {
-  background-image: url(../img/speakers/bio_genet_jesse.jpg);
-}
-
-.speaker-card:nth-child(12) {
-  background-image: url(../img/speakers/bio_collier_jessica.jpg);
-}
-
-.speaker-card:nth-child(13) {
-  background-image: url(../img/speakers/bio_napolitano_lia.jpg);
-}
-
-.speaker-card:nth-child(14) {
-  background-image: url(../img/speakers/bio_dong_linda.jpg);
-}
-
-.speaker-card:nth-child(15) {
-  background-image: url(../img/speakers/bio_mantia_louie.jpg);
-}
-
-.speaker-card:nth-child(16) {
-  background-image: url(../img/speakers/bio_khoe_may-li.jpg);
-}
-
-.speaker-card:nth-child(17) {
-  background-image: url(../img/speakers/bio_johnson_michael_b.jpg);
-}
-
-.speaker-card:nth-child(18) {
-  background-image: url(../img/speakers/bio_murray_nelson.jpg);
-}
-
-.speaker-card:nth-child(19) {
-  background-image: url(../img/speakers/bio_slatkin_rebecca.jpg);
-}
-
-.speaker-card:nth-child(20) {
-  background-image: url(../img/speakers/bio_quirino_tim.jpg);
-}
-
-.speaker-card:nth-child(21) {
-  background-image: url(../img/speakers/bio_usiyan_tj.jpg);
-}
-
-.speaker-card:nth-child(22) {
-  background-image: url(../img/speakers/bio_shipley_wil.jpg);
-}
-
-.speaker-card:nth-child(23) {
-  background-image: url(../img/speakers/bio_chien_windy.jpg);
-}
-
 .speaker-card.no-image {
   background-image: url(../img/speakers/bio_andmore.jpg);
 }
 
 .tito-submit-wrapper button,
-.show-presentation-details,
-.show-code-of-conduct {
+.show-presentation-details {
   display: inline-block;
   font-family: TTProstoSansCondensed-Bold;
   line-height: 2em;
@@ -764,19 +659,6 @@ footer h3 {
   color: white;
   font-size: 1.2em;
   line-height: 1.35em;
-}
-
-.show-code-of-conduct {
-  background: #ffcdbc;
-  color: #212c5b;
-}
-
-.tito-container input {
-  color: black;
-}
-
-.tito-submit-wrapper button {
-  color: #ffcdbc;
 }
 
 .code-of-conduct {
@@ -814,11 +696,11 @@ footer h3 {
 }
 
 .credits a {
-  color: white;
+  color: #25235a;
 }
 
 .credits h3 a {
-  color: #ffcdbc;
+  color: #ec6561;
 }
 
 .credits h3 {
@@ -828,9 +710,23 @@ footer h3 {
 }
 
 /* TITO OVERRIDES */
+/* .tito-container input { */
+/*   color: black; */
+/* } */
+
+/* .tito-submit-wrapper button { */
+/*   color: #ffcdbc; */
+/* } */
+
 .tito-wrapper {
-  background: none;
+  background: #e3e5e5;
   border: none;
+  border-radius: 0;
+}
+
+.tito-ticket-status span {
+  background: #ec6561;
+  border-radius: 0;
   color: white;
 }
 
@@ -838,26 +734,33 @@ footer h3 {
 .tito-ticket-status,
 .tito-ticket-status-sold-out,
 .tito-ticket-name-wrapper {
-  border-bottom: 1px solid #ffcdbc;
+  border-bottom: 0;
 }
 
-.tito-wrapper a {
-  color: #ffcdbc;
+.tito-tickets-unavailable,
+.tito-ticket-name,
+.tito-ticket-list,
+.tito-badge-link {
+  color: #25235a;
+  font-family: TTProstoSansCondensed-Bold;
+}
+
+.tito-tickets-unavailable {
+  font-size: 0.7em;
+}
+
+.tito-ticket-list {
+  margin: 0 0 0 0
 }
 
 .tito-badge-link {
-  text-align: right;
+  width: auto;
+  float: left;
 }
 
-.tito-submit {
-  background: #212c5b;
-  border-radius: 0;
-  border: none;
-}
 
-.tito-ticket-quantity-field {
-  color: black;
-  font-size: 1em;
+.host-cards-container section:first-child {
+  margin-bottom: 70px;
 }
 
 /* ==========================================================================
