@@ -45,7 +45,13 @@
         <header>
           <div class="wrapper">
             <div class="container">
-              <img src="img/logos/herolockup_2col-small.svg">
+              <!--
+                Intentionally not using srcset since these are SVGs
+                they don't play nice with srcset
+              -->
+              <img class="small-header" src="img/logos/herolockup_2col-small.svg">
+              <img class="medium-header" src="img/logos/herolockup_3col.svg">
+              <img class="large-header" src="img/logos/herolockup_full.svg">
               <!--
                 Since this information is presented in an image I am putting it
                 in here but hiding it so screen readers and other accessibility
@@ -59,21 +65,16 @@
           </div>
         </header>
 
-        <div class="wrapper nav desktop-only">
+        <div class="nav desktop-only">
           <div class="container">
             <nav>
               <ul>
-                <li>
-                  <a class="scroll-to-top">
-                    <img class="logo" src="img/layers-nav-logo.svg" width="31" height="34" alt="Layers Logo">
-                  </a>
-                </li>
+                <li><a class="scroll-to-top back-to-top">&#11014;</a></li>
                 <li><a href="#what">What</a></li>
                 <li><a href="#speakers">Presenters</a></li>
                 <li><a href="#deets">The Deets</a></li>
                 <li><a href="#register">Register</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#" class="scroll-to-top back-to-top">&uarr;</a></li>
               </ul>
             </nav>
           </div>
@@ -101,15 +102,20 @@
               <section>
                 <h1 class="hidden">Presenters</h1>
                 <h2 class="hidden">Seriously, look at these people.</h2>
-                <img src="img/area_subheads/presenters.svg" width="80%">
-                <img class="desktop-only" src="img/section_graphics/graphic_presenters.svg" height="179" width="193" alt="Graphic Presenters">
+                <img src="img/area_subheads/presenters.svg" width="80%" alt="presenters" class="presenters">
               </section>
 
               <section class="speaker-cards-container">
                 <div class="speaker-card">
                   <div class=image-wrapper>
+                    <img src="img/area_subheads/presenters.svg" width="100%" alt="presenters">
+                  </div>
+                </div>
+
+                <div class="speaker-card">
+                  <div class=image-wrapper>
                     <div class="image-square"></div>
-                    <img class="photo" alt="Speaker" src="img/butthead.png">
+                    <img class="photo" alt="Speaker" src="img/butthead.png" width="100%">
                   </div>
                   <div class="name">John<br>Hodgman</div>
                   <div class="subtitle cushycms">That Is All</div>
@@ -118,7 +124,25 @@
                 <div class="speaker-card">
                   <div class=image-wrapper>
                     <div class="image-square"></div>
-                    <img class="photo" alt="Speaker" src="img/butthead.png">
+                    <img class="photo" alt="Speaker" src="img/butthead.png" width="100%">
+                  </div>
+                  <div class="name">John<br>Hodgman</div>
+                  <div class="subtitle cushycms">That Is All</div>
+                </div>
+
+                <div class="speaker-card">
+                  <div class=image-wrapper>
+                    <div class="image-square"></div>
+                    <img class="photo" alt="Speaker" src="img/butthead.png" width="100%">
+                  </div>
+                  <div class="name">John<br>Hodgman</div>
+                  <div class="subtitle cushycms">That Is All</div>
+                </div>
+
+                <div class="speaker-card">
+                  <div class=image-wrapper>
+                    <div class="image-square"></div>
+                    <img class="photo" alt="Speaker" src="img/butthead.png" width="100%">
                   </div>
                   <div class="name">John<br>Hodgman</div>
                   <div class="subtitle cushycms">That Is All</div>
@@ -245,6 +269,7 @@
 
         <div id="deets" class="deets">
           <div class="wrapper">
+            <img src="img/map.png" alt="map">
             <div class="container">
               <section>
                 <h2>The<br>Deets</h2>
@@ -255,8 +280,6 @@
               </section>
 
               <section class="google-map">
-                <div class="map desktop-only" id="layersmap2016"></div>
-
                 <div class="copy">
                   <p class="cushycms">Just 2 blocks from WWDC, we&#39;re just steps away from cool hotels, awesome restaurants, and top-notch nightlife.</p>
 
@@ -285,7 +308,6 @@
                 <div class="tito-container">
                   <tito-widget event="opening-night-llc/layers-2016"></tito-widget>
                 </div>
-                <img class="desktop-only" src="img/section_graphics/graphic_signup.svg" height="120" width="130" alt="Sign Up Graphic">
 
                 <a href="#" class="show-code-of-conduct" id="show-code-of-conduct">View Code of Conduct</a>
 
@@ -350,9 +372,11 @@
                       <div class="image-square"></div>
                       <img class="photo" src="img/hosts/jessie.jpg" height="120" width="130" alt="Jessie Char">
                     </div>
-                    <div class="name">Jessie Char</div>
-                    <div class="bio">
-                      <p class="cushycms">Jessie is a former cellist who left the glamorous classical music industry for the even more glamorous Mac development and design industry. She&#39;s put in her time behind [genius] bars, had an infamous stint at Delicious Monster, a more regular stint at Mule Design, and co-founded and headed the design agency Pacific Helm. She now works as an independent consultant directing design and producing very ambitious conferences.</p>
+                    <div class="copy-wrapper">
+                      <div class="name">Jessie Char</div>
+                      <div class="bio">
+                        <p class="cushycms">Jessie is a former cellist who left the glamorous classical music industry for the even more glamorous Mac development and design industry. She&#39;s put in her time behind [genius] bars, had an infamous stint at Delicious Monster, a more regular stint at Mule Design, and co-founded and headed the design agency Pacific Helm. She now works as an independent consultant directing design and producing very ambitious conferences.</p>
+                      </div>
                     </div>
                   </div>
 
@@ -361,9 +385,11 @@
                       <div class="image-square"></div>
                       <img class="photo" src="img/hosts/elaine.png" height="120" width="130" alt="Elaine Pow">
                     </div>
-                    <div class="name">Elaine Pow</div>
-                    <div class="bio">
-                      <p class="cushycms">If you&#39;ve cruised a mall in the last 20 years, you may have seen some of Elaine&#39;s work. Her career in the fashion, beauty, and tech industries includes contributions to GAP, Anthropologie, and Sephora. At Apple&nbsp;she defined the merchandising for the first iPhone launch and her work became the cornerstone of the company&#39;s international retail merchandising standards. Nowadays Elaine helps emerging businesses as a brand development and retail consultant.</p>
+                    <div class="copy-wrapper">
+                      <div class="name">Elaine Pow</div>
+                      <div class="bio">
+                        <p class="cushycms">If you&#39;ve cruised a mall in the last 20 years, you may have seen some of Elaine&#39;s work. Her career in the fashion, beauty, and tech industries includes contributions to GAP, Anthropologie, and Sephora. At Apple&nbsp;she defined the merchandising for the first iPhone launch and her work became the cornerstone of the company&#39;s international retail merchandising standards. Nowadays Elaine helps emerging businesses as a brand development and retail consultant.</p>
+                      </div>
                     </div>
                   </div>
                 </section>
@@ -463,7 +489,6 @@
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/main.js"></script>
-        <script src="js/mapinit.js"></script>
         <script src='https://js.tito.io/v1' async></script>
         <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
         async defer></script>

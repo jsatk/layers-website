@@ -149,6 +149,15 @@ header {
   background: #e3e5e5;
 }
 
+.small-header {
+  display: inline;
+}
+
+.medium-header,
+.large-header {
+  display: none;
+}
+
 header {
   background: url('../img/patterns_stripe/light_to_dark.svg') 0 100px repeat-x transparent;
   margin-top: 85px;
@@ -206,6 +215,10 @@ footer {
 
 .deets p {
   color: #25235a;
+}
+
+.deets .wrapper > img {
+  display: none;
 }
 
 h1,
@@ -277,14 +290,12 @@ h4 {
 
 .what .go-to-sign-up,
 .sign-up .show-code-of-conduct {
-  background-position: top left;
+  background-position: top center;
   background-color: transparent;
-  background-size: 100%;
+  background-repeat: no-repeat;
   color: white;
   display: inline-block;
   font-family: TTProstoSansCondensed-Bold;
-  margin-bottom: 64px;
-  margin-left: -25px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -293,7 +304,7 @@ h4 {
 
 .what .go-to-sign-up {
   font-size: 0.52em;
-  padding: 0 0 17px 10px;
+  padding: 0 0 17px 20px;
   background-image: url('../img/buttons/button_signmeup.svg');
 }
 
@@ -349,11 +360,26 @@ h4 {
   margin-top: 0;
   padding: 10px 0;
   position: relative;
+  top: 0;
   z-index: 2;
 }
 
 .nav .logo {
   margin-top: 30px;
+}
+
+.nav.desktop-only ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav.desktop-only li {
+  font-size: 0.75em;
+}
+
+.nav.desktop-only a {
+  letter-spacing: 2px;
+  line-height: 3.5em;
 }
 
 .nav-buttons-wrapper {
@@ -423,7 +449,6 @@ h4 {
 }
 
 nav {
-  height: 0;
   text-transform: uppercase;
   -webkit-transition: height 200ms ease-in;
   -moz-transition: height 200ms ease-in;
@@ -447,10 +472,18 @@ nav li {
 }
 
 nav li a {
+  color: #ec6561;
+  padding: 0 10px;
   text-decoration: none;
 }
 
+nav li a:hover {
+  background: #ec6561;
+  color: #25235a;
+}
+
 .mobile-only nav {
+  height: 0;
   background: #e3e5e5; /* TODO: Maybe can delete? */
 }
 
@@ -485,6 +518,10 @@ nav li a {
 
 .speakers section:nth-child(2) {
   margin-top: 50px;
+}
+
+.speakers .speaker-card:first-child {
+  display: none;
 }
 
 .speaker-card {
@@ -528,9 +565,7 @@ nav li a {
 .image-wrapper .image-square {
   border: 1px solid #ec6561;
   height: 238px;
-  left: 0;
-  position: absolute;
-  top: 0;
+  position: relative;
   width: 238px;
   z-index: 1;
 }
@@ -576,15 +611,6 @@ strong {
 .sign-up h1 {
   color: #ffcdbc;
   margin-bottom: 30px;
-}
-
-footer h1.off-center-title {
-  font-size: 3em;
-  line-height: 0.9em;
-  margin-bottom: 60px;
-  margin-left: 7px;
-  margin-top: 114px;
-  white-space: nowrap;
 }
 
 .host-card {
@@ -853,47 +879,17 @@ footer h3 {
 
 /* All previous styles styled following layers_web2016_mobile_0_560.jpg */
 
-/* layers_web2016_tab_561_820.jpg */
-@media all and (min-width: 561px) {
-  h1.off-center-title {
-    font-size: 6em;
-  }
-
-  section {
-    position: static;
-  }
-
-  .what .go-to-sign-up {
-    width: 50%;
-  }
-
-  .speaker-card,
-  .sponsor-card {
-    width: 49%;
-  }
-
-  .speaker-card:nth-child(odd),
-  .sponsor-card:nth-child(odd) {
-    float: left;
-  }
-
-  .speaker-card:nth-child(even),
-  .sponsor-card:nth-child(even) {
-    float: right;
-  }
-
-  header h2,
-  header h3 {
-    font-size: 1.4em;
-  }
-
-  .code-of-conduct.active {
-    height: 1560px;
-  }
-}
-
 /* layers_web2016_max_821_1024.jpg */
-@media all and (min-width: 821px) {
+@media all and (min-width: 768px) {
+  .medium-header {
+    display: inline;
+  }
+
+  .small-header,
+  .large-header {
+    display: none;
+  }
+
   p {
     font-size: 0.8em;
   }
@@ -911,52 +907,35 @@ footer h3 {
     display: block;
   }
 
-  .header-image {
-    width: 58%;
+  .what .wrapper {
+    padding-top: 40px;
   }
 
-  .nav {
-    margin-top: 20px;
-    overflow: hidden;
-    top: 0;
+  .what section {
+    float: right;
+    width: 85%;
   }
 
-  .nav .logo {
-    margin: 0;
-  }
-
-  nav li {
+  .what h2 {
     float: left;
-    font-size: 0.75em;
-    margin-left: 6.5%;
-  }
-
-  nav li:first-child {
-    margin-left: 0;
-  }
-
-  nav a {
-    color: white;
-    letter-spacing: 2px;
-    line-height: 3.5em;
-  }
-
-  .what section:last-child {
-    background: url(../img/section_graphics/graphic_intro.svg) top right no-repeat;
-    background-size: 193px 179px;
+    width: 20%;
   }
 
   .what .copy {
-    width: 70%;
+    float: right;
+    width: 80%;
   }
 
   .what .go-to-sign-up {
     margin-top: 0;
   }
 
-  .speaker-cards-container {
-    float: right;
-    width: 70%;
+  .speakers .speaker-card:first-child {
+    display: inline;
+  }
+
+  .presenters {
+    display: none;
   }
 
   .speakers section:first-child img {
@@ -966,7 +945,6 @@ footer h3 {
 
   .deets .copy {
     float: right;
-    width: 69.2%; /* I hate CSS so much right now */
     margin-top: 55px;
   }
 
@@ -978,17 +956,25 @@ footer h3 {
     overflow: hidden;
   }
 
-  .speakers section:first-child,
-  .deets section:first-child {
+  .deets .wrapper {
+    position: relative;
+  }
+
+  .deets .wrapper > img {
+    display: inline;
     position: absolute;
+    right: 80%;
+    top: 0;
+  }
+
+  .deets .container,
+  .sign-up .container {
+    float: right;
+    width: 70%;
   }
 
   .speakers section:nth-child(2) {
     margin-top: 0;
-  }
-
-  .speakers section.speaker-cards-container {
-    margin-top: 165px;
   }
 
   .google-map {
@@ -1007,29 +993,7 @@ footer h3 {
     float: left;
   }
 
-  .tito-container {
-    float: left;
-    margin-top: 140px;
-  }
-
   .host-cards-container {
-    overflow: hidden;
-  }
-
-  .sign-up section:first-child,
-  .host-cards-container section:first-child {
-    float: left;
-    width: 30%;
-  }
-
-  .sign-up section:last-child,
-  .host-cards-container section:last-child {
-    float: right;
-    width: 69.2%;
-  }
-
-  .host-cards-container section:last-child {
-    margin-top: 140px;
   }
 
   .sponsor-card {
@@ -1037,6 +1001,8 @@ footer h3 {
     height: 250px;
   }
 
+  .speaker-card:nth-child(odd),
+  .speaker-card:nth-child(even),
   .sponsor-card:nth-child(odd),
   .sponsor-card:nth-child(even) {
     float: left;
@@ -1065,16 +1031,16 @@ footer h3 {
     padding-top: 20px;
   }
 
+  .speaker-card {
+    width: 50%;
+  }
+
   .speaker-card .name {
     font-size: 1.3em;
   }
 
   .speaker-card .subtitle {
     font-size: 1em;
-  }
-
-  .speaker-card > div {
-    margin-top: -23px;
   }
 
   .speakers h2 {
@@ -1098,12 +1064,47 @@ footer h3 {
   .code-of-conduct.active {
     height: 1750px;
   }
+
+  .host-card {
+    clear: both;
+  }
+
+  .host-card .name {
+    margin-top: 0;
+  }
+
+  .host-cards-container section:first-child {
+    float: right;
+    width: 50%;
+  }
+
+  .host-cards-container section:last-child {
+    clear: right;
+  }
+
+  .host-cards-container .image-wrapper {
+    float: left;
+  }
+
+  .host-cards-container .copy-wrapper {
+    float: right;
+    width: 50%;
+  }
 }
 
 /* layers_web2016_max_1024.jpg */
 @media all and (min-width: 1024px) {
-  nav li {
-    margin-left: 104px;
+  .large-header {
+    display: inline;
+  }
+
+  .small-header,
+  .medium-header {
+    display: none;
+  }
+
+  .what .wrapper {
+    padding-top: 40px;
   }
 
   .speaker-card {
@@ -1112,35 +1113,20 @@ footer h3 {
     width: 32%;
   }
 
-  .deets h4 {
-    float: right;
-  }
-
-  .deets p {
-    clear: right;
-    float: right;
-    width: 67%; /* CSS is stupid */
-  }
-
   .tito-container {
     width: 465px;
   }
 
-  .sign-up img {
-    display: block;
-    float: left;
-    margin-left: 2%;
-    margin-top: 160px;
-  }
-
-  .sponsors,
-  .host-cards-container section:last-child {
+  .sponsors {
     width: 70%;
   }
 
   .host-card {
-    float: left;
-    width: 50%;
+    width: 80%;
+  }
+
+  .host-card:last-child {
+    float: right;
   }
 
   .sponsor-card {

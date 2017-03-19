@@ -4,7 +4,7 @@
   // Global vars in closure
   var desktopBreakpoint = 0;
   var mobileBreakpoint  = 0;
-  var paddingTop        = 0;
+  var paddingTop        = 40;
   var elms              = {}; // Object that holds all of our jQuery elements.
 
   var cacheElms = function () {
