@@ -894,11 +894,6 @@ footer h3 {
     font-size: 0.8em;
   }
 
-  section {
-    position: relative;
-    z-index: 1;
-  }
-
   .mobile-only {
     display: none;
   }
@@ -1094,6 +1089,10 @@ footer h3 {
 
 /* layers_web2016_max_1024.jpg */
 @media all and (min-width: 1024px) {
+  .what section {
+    width: 65%;
+  }
+
   .large-header {
     display: inline;
   }
@@ -1103,14 +1102,65 @@ footer h3 {
     display: none;
   }
 
-  .what .wrapper {
-    padding-top: 40px;
+  /* I hate this 😤 */
+  .speaker-card:nth-child(1),
+  .speaker-card:nth-child(2),
+  .speaker-card:nth-child(3),
+  .speaker-card:nth-child(10),
+  .speaker-card:nth-child(11),
+  .speaker-card:nth-child(12),
+  .speaker-card:nth-child(13),
+  .speaker-card:nth-child(14),
+  .speaker-card:nth-child(15),
+  .speaker-card:nth-child(22),
+  .speaker-card:nth-child(23),
+  .speaker-card:nth-child(24),
+  .speaker-card:nth-child(25),
+  .speaker-card:nth-child(26),
+  .speaker-card:nth-child(27) {
+    float: right;
+  }
+
+  /* I hate this 😤 */
+  .speaker-card:nth-child(4),
+  .speaker-card:nth-child(5),
+  .speaker-card:nth-child(6),
+  .speaker-card:nth-child(7),
+  .speaker-card:nth-child(8),
+  .speaker-card:nth-child(9),
+  .speaker-card:nth-child(16),
+  .speaker-card:nth-child(17),
+  .speaker-card:nth-child(18),
+  .speaker-card:nth-child(19),
+  .speaker-card:nth-child(20),
+  .speaker-card:nth-child(21) {
+    float: left;
+  }
+
+  .speaker-card:nth-child(4),
+  .speaker-card:nth-child(7),
+  .speaker-card:nth-child(16),
+  .speaker-card:nth-child(19) {
+    clear: right;
+  }
+
+  .speaker-card:nth-child(10),
+  .speaker-card:nth-child(13),
+  .speaker-card:nth-child(22),
+  .speaker-card:nth-child(25) {
+    clear: left;
   }
 
   .speaker-card {
-    float: left !important;
-    margin-left: 1%;
-    width: 32%;
+    width: 25%;
+  }
+
+  .deets .container {
+    width: 50%;
+  }
+
+  .deets .wrapper > img {
+    right: 55%;
   }
 
   .tito-container {
@@ -1139,6 +1189,22 @@ footer h3 {
 
   .container {
     max-width: 1024px;
+  }
+
+  .sign-up section {
+    float: left;
+  }
+
+  .sign-up section:last-child {
+    width: 50%;
+  }
+
+  .sign-up .container {
+    width: 65%;
+  }
+
+  .tito-wrapper {
+    margin: 20px auto 0 10px;
   }
 
   .show-code-of-conduct {
