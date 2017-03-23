@@ -217,10 +217,6 @@ footer {
   color: #25235a;
 }
 
-.deets .wrapper > img {
-  display: none;
-}
-
 h1,
 h2,
 h3,
@@ -505,7 +501,6 @@ nav li a:hover {
 
 .speakers {
   background: url('../img/patterns_stripe/dark_to_light.svg') 0 0 repeat-x transparent;
-  padding-bottom: 116px;
 }
 
 .speakers h2 {
@@ -737,15 +732,6 @@ footer h3 {
   margin-bottom: 0;
 }
 
-/* TITO OVERRIDES */
-/* .tito-container input { */
-/*   color: black; */
-/* } */
-
-/* .tito-submit-wrapper button { */
-/*   color: #ffcdbc; */
-/* } */
-
 .tito-wrapper {
   background: #e3e5e5;
   border: none;
@@ -938,11 +924,6 @@ footer h3 {
     margin-top: 40px;
   }
 
-  .deets .copy {
-    float: right;
-    margin-top: 55px;
-  }
-
   /* Begin odd overlaying stuff */
   .speakers .container,
   .deets .container,
@@ -955,40 +936,36 @@ footer h3 {
     position: relative;
   }
 
-  .deets .wrapper > img {
-    display: inline;
-    position: absolute;
-    right: 80%;
-    top: 0;
+  .deets .wrapper {
+    background: url('../img/map.png') 170% 0 no-repeat transparent
   }
 
-  .deets .container,
-  .sign-up .container {
+  .deets section {
+    clear: both;
     float: right;
-    width: 70%;
+    width: 60%;
   }
 
   .speakers section:nth-child(2) {
     margin-top: 0;
   }
 
-  .google-map {
-    clear: right;
-    height: 440px; /* Height of the map */
-    position: relative;
+  .sign-up .foobar {
+    width: 85%;
+    float: right;
   }
 
-  .google-map .directions {
-    position: absolute;
-    top: 0;
-    right: 0;
+  .sign-up section:first-child {
+    float: left;
+  }
+
+  .sign-up section:nth-child(2) {
+    float: right;
+    width: 78%;
   }
 
   .sign-up h1 {
     float: left;
-  }
-
-  .host-cards-container {
   }
 
   .sponsor-card {
@@ -1022,10 +999,6 @@ footer h3 {
     background-size: 193px 179px;
   }
 
-  .speakers {
-    padding-top: 20px;
-  }
-
   .speaker-card {
     width: 50%;
   }
@@ -1044,7 +1017,7 @@ footer h3 {
   }
 
   .deets {
-    padding-top: 90px;
+    padding-top: 110px;
   }
 
   .deets h1 {
@@ -1070,7 +1043,7 @@ footer h3 {
 
   .host-cards-container section:first-child {
     float: right;
-    width: 50%;
+    width: 80%;
   }
 
   .host-cards-container section:last-child {
@@ -1102,69 +1075,29 @@ footer h3 {
     display: none;
   }
 
-  /* I hate this 😤 */
-  .speaker-card:nth-child(1),
-  .speaker-card:nth-child(2),
-  .speaker-card:nth-child(3),
-  .speaker-card:nth-child(10),
-  .speaker-card:nth-child(11),
-  .speaker-card:nth-child(12),
-  .speaker-card:nth-child(13),
-  .speaker-card:nth-child(14),
-  .speaker-card:nth-child(15),
-  .speaker-card:nth-child(22),
-  .speaker-card:nth-child(23),
-  .speaker-card:nth-child(24),
-  .speaker-card:nth-child(25),
-  .speaker-card:nth-child(26),
-  .speaker-card:nth-child(27) {
+  .speaker-card {
+    float: left;
+    width: 33%;
+  }
+
+  .speaker-block {
+    width: 80%;
+  }
+
+  .speaker-block:nth-child(odd) {
     float: right;
   }
 
-  /* I hate this 😤 */
-  .speaker-card:nth-child(4),
-  .speaker-card:nth-child(5),
-  .speaker-card:nth-child(6),
-  .speaker-card:nth-child(7),
-  .speaker-card:nth-child(8),
-  .speaker-card:nth-child(9),
-  .speaker-card:nth-child(16),
-  .speaker-card:nth-child(17),
-  .speaker-card:nth-child(18),
-  .speaker-card:nth-child(19),
-  .speaker-card:nth-child(20),
-  .speaker-card:nth-child(21) {
+  .speaker-block:nth-child(even) {
     float: left;
   }
 
-  .speaker-card:nth-child(4),
-  .speaker-card:nth-child(7),
-  .speaker-card:nth-child(16),
-  .speaker-card:nth-child(19) {
-    clear: right;
+  .deets .wrapper {
+    background-position: 180% 0;
   }
 
-  .speaker-card:nth-child(10),
-  .speaker-card:nth-child(13),
-  .speaker-card:nth-child(22),
-  .speaker-card:nth-child(25) {
-    clear: left;
-  }
-
-  .speaker-card {
-    width: 25%;
-  }
-
-  .deets .container {
+  .deets section {
     width: 50%;
-  }
-
-  .deets .wrapper > img {
-    right: 55%;
-  }
-
-  .tito-container {
-    width: 465px;
   }
 
   .sponsors {
@@ -1193,10 +1126,6 @@ footer h3 {
 
   .sign-up section {
     float: left;
-  }
-
-  .sign-up section:last-child {
-    width: 50%;
   }
 
   .sign-up .container {
