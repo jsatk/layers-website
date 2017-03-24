@@ -235,7 +235,7 @@ h3 {
 h1,
 h2 {
   color: #ec6561;
-  font-size: 4em;
+  font-size: 5em;
   font-family: RamaGothicC-SemiBold;
 }
 
@@ -520,7 +520,13 @@ nav li a:hover {
 }
 
 .speaker-card {
+  border-bottom: 1px solid #c8cccd;
+  margin-bottom: 4em;
   width: 80%;
+}
+
+.speaker-block:first-child .speaker-card:first-child {
+  border-bottom: none;
 }
 
 .speaker-card.no-image {
@@ -586,6 +592,7 @@ nav li a:hover {
 }
 
 .deets h4 {
+  color: #25235a;
   font-size: 0.9em;
   width: 67%;
 }
@@ -606,10 +613,6 @@ strong {
 .sign-up h1 {
   color: #ffcdbc;
   margin-bottom: 30px;
-}
-
-.host-card {
-  margin-bottom: 80px;
 }
 
 footer .bio p {
@@ -894,7 +897,7 @@ footer h3 {
 
   .what section {
     float: right;
-    width: 85%;
+    width: 82%;
   }
 
   .what h2 {
@@ -943,7 +946,7 @@ footer h3 {
   .deets section {
     clear: both;
     float: right;
-    width: 60%;
+    width: 65%;
   }
 
   .speakers section:nth-child(2) {
@@ -961,7 +964,7 @@ footer h3 {
 
   .sign-up section:nth-child(2) {
     float: right;
-    width: 78%;
+    width: 72%;
   }
 
   .sign-up h1 {
@@ -987,7 +990,7 @@ footer h3 {
 
   .sponsors {
     float: right;
-    width: 60%;
+    width: 65%;
   }
 
   .sign-up img {
@@ -1043,7 +1046,7 @@ footer h3 {
 
   .host-cards-container section:first-child {
     float: right;
-    width: 80%;
+    width: 60%;
   }
 
   .host-cards-container section:last-child {
@@ -1056,7 +1059,12 @@ footer h3 {
 
   .host-cards-container .copy-wrapper {
     float: right;
-    width: 50%;
+    width: 55%;
+  }
+
+  .host-cards-container .image-wrapper,
+  .host-cards-container .copy-wrapper {
+    margin-top: 4em;
   }
 }
 
