@@ -124,10 +124,6 @@ body {
   font-family: TTProstoSansCondensed-Regular;
 }
 
-img.photo {
-  filter: grayscale(100%);
-}
-
 section {
   position: relative;
 }
@@ -781,14 +777,18 @@ footer h3 {
 }
 
 .tito-ticket-list {
-  margin: 0 0 0 0
+  margin: 0;
+}
+
+.tito-ticket.row:first-child .tito-ticket-name-wrapper,
+.tito-ticket.row:nth-child(2) .tito-ticket-name-wrapper {
+  padding: 20px 0;
 }
 
 .tito-badge-link {
   width: auto;
   float: left;
 }
-
 
 .host-cards-container section:first-child {
   margin-bottom: 70px;
@@ -944,8 +944,9 @@ footer h3 {
     display: none;
   }
 
-  .coming-soon {
+  .coming-soon-container {
     float: right;
+    width: 82%;
   }
 
   .speakers section:first-child img {
@@ -1099,6 +1100,10 @@ footer h3 {
   .small-header,
   .medium-header {
     display: none;
+  }
+
+  .coming-soon-container {
+    width: 70%;
   }
 
   .speaker-card {
