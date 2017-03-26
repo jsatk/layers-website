@@ -663,15 +663,19 @@ footer h3 {
   width: 500px;
 }
 
+.tito-submit-wrapper button {
+  background-color: #ec6561;
+  color: white;
+  border: none;
+  border-radius: 0;
+  margin-top: 10px;
+}
+
 .tito-submit-wrapper button,
 .show-presentation-details {
-  display: inline-block;
   font-family: TTProstoSansCondensed-Bold;
-  line-height: 2em;
   padding: 0;
-  text-align: center;
   text-transform: uppercase;
-  width: 100%;
 }
 
 .show-presentation-details {
@@ -748,6 +752,7 @@ footer h3 {
   background: #e3e5e5;
   border: none;
   border-radius: 0;
+  padding: 10px 10px 25px 10px;
 }
 
 .tito-ticket-status span {
@@ -1013,7 +1018,7 @@ footer h3 {
 
   .sign-up section:nth-child(2) {
     float: right;
-    width: 72%;
+    width: 69%;
   }
 
   .sign-up h1 {
@@ -1150,6 +1155,11 @@ footer h3 {
 
   .sign-up .container {
     width: 65%;
+  }
+
+  .sign-up section:nth-child(2) {
+    float: right;
+    width: 72%;
   }
 
   .tito-wrapper {
