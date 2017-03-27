@@ -1022,6 +1022,10 @@ footer h3 {
     width: 69%;
   }
 
+  .tito-ticket-price-quantity-wrapper {
+    min-width: 180px;
+  }
+
   .sign-up h1 {
     float: left;
   }
