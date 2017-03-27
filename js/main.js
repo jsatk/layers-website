@@ -111,7 +111,7 @@
     desktopStickNav();
   };
 
-  $(window).on('load', function () {
+  $(function () {
     cacheElms();
     setGlobalVars();
     showHideNav();
