@@ -964,7 +964,7 @@ footer h3 {
 
   .deets .wrapper {
     position: relative;
-    background: url('../img/map.jpg') 155% 0 no-repeat transparent
+    background: url('../img/map.jpg') center center no-repeat transparent
   }
 
   .deets section {
