@@ -1152,7 +1152,7 @@ footer h3 {
   }
 
   .code-of-conduct.active {
-    height: 1240px;
+    height: 1680px;
   }
 
   .container {
@@ -1178,6 +1178,13 @@ footer h3 {
 
   .host-cards-container .copy-wrapper {
     width: 65%;
+  }
+}
+
+
+@media all and (min-width: 1200px) {
+  .code-of-conduct.active {
+    height: 1480px;
   }
 }
 
