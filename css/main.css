@@ -778,6 +778,7 @@ footer h3 {
 
 .tito-ticket-list {
   margin: 0;
+  table-layout: fixed;
 }
 
 .tito-ticket.row:first-child .tito-ticket-name-wrapper,
@@ -1023,7 +1024,7 @@ footer h3 {
   }
 
   .tito-ticket-price-quantity-wrapper {
-    min-width: 180px;
+    min-width: 160px;
   }
 
   .sign-up h1 {
@@ -1068,7 +1069,7 @@ footer h3 {
 
   .host-cards-container section:first-child {
     float: right;
-    width: 60%;
+    width: 58%;
   }
 
   .host-cards-container section:last-child {
