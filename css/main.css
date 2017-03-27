@@ -1168,7 +1168,7 @@ footer h3 {
 
   .sign-up section:nth-child(2) {
     float: right;
-    width: 72%;
+    width: 71%;
   }
 
   .tito-wrapper {
@@ -1178,7 +1178,6 @@ footer h3 {
   .host-cards-container .copy-wrapper {
     width: 65%;
   }
-
 }
 
 /* ==========================================================================
