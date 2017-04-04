@@ -498,6 +498,7 @@ nav li a:hover {
 
 .speakers {
   background: url('../img/patterns_stripe/dark_to_light.svg') 0 0 repeat-x transparent;
+  background-size: 80px;
 }
 
 .speakers h2 {
@@ -512,20 +513,45 @@ nav li a:hover {
   margin-top: 50px;
 }
 
-.speakers .speaker-card:first-child {
+.speakers .speaker-card:nth-child(3) {
   display: none;
 }
 
 .speaker-card {
-  margin-bottom: 4em;
+  cursor: pointer;
+  margin-bottom: 2em;
+  transition: width 300ms ease-out;
   width: 80%;
+}
+
+.speaker-card.no-click {
+  cursor: auto;
+}
+
+.speaker-card .bio {
+  cursor: pointer;
+  margin-top: 2em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease-out;
+}
+
+.speaker-card.active .bio {
+  max-height: 500px;
+  max-width: 90%;
+  transition: max-height 300ms ease-in;
+}
+
+.speaker-card.active {
+  transition: width 300ms ease-in;
+  width: 100%;
 }
 
 .speaker-block:first-child .speaker-card:first-child {
   border-bottom: none;
 }
 
-.speaker-block:first-child .speaker-card:nth-child(1) img {
+.speaker-block:first-child .speaker-card:nth-child(4) img {
   top: -10px;
 }
 
@@ -550,9 +576,19 @@ nav li a:hover {
   margin-top: 15px;
 }
 
+.speaker-card.mid-width {
+  display: none;
+}
+
 .image-wrapper {
+  background: url('../img/patterns_stripe/bio-background.svg') bottom left no-repeat transparent;
+  background-size: 0 0;
   position: relative;
-  min-height: 250px; /* TODO: This is hot garbage */
+  min-height: 248px; /* TODO: This is hot garbage */
+}
+
+.active .image-wrapper {
+  background-size: 100% 238px;
 }
 
 .image-wrapper img {
@@ -937,8 +973,16 @@ footer h3 {
     margin-left: -32px;
   }
 
-  .speakers .speaker-card:first-child {
+  .speakers .speaker-card:nth-child(3) {
     display: inline;
+  }
+
+  .speaker-card.mid-width {
+    display: block;
+  }
+
+  .speaker-card.full-width {
+    display: none;
   }
 
   .presenters {
@@ -991,7 +1035,8 @@ footer h3 {
     float: left;
   }
 
-  .speaker-card {
+  .speaker-card,
+  .speaker-card.active {
     width: 50%;
   }
 
@@ -1114,18 +1159,31 @@ footer h3 {
 
   .speaker-card {
     float: left;
-    width: 33%;
+    width: 25%;
+  }
+
+  .speaker-card.active {
+    width: 50%;
+  }
+
+  .speaker-card.mid-width {
+    display: none;
+  }
+
+  .speaker-card.full-width {
+    display: block;
   }
 
   .speaker-block {
-    width: 80%;
+    clear: both;
   }
 
-  .speaker-block:nth-child(odd) {
+  .speaker-block:nth-child(odd) .speaker-card {
     float: right;
+    clear: left;
   }
 
-  .speaker-block:nth-child(even) {
+  .speaker-block:nth-child(even) .speaker-card {
     float: left;
   }
 

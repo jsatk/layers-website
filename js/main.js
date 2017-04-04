@@ -18,6 +18,7 @@
     elms.$desktopNavWrapper       = $('.nav.desktop-only');
     elms.$scrollToTop             = $('.scroll-to-top');
     elms.$scrollToSection         = $('.nav nav a[href^="#"]');
+    elms.$speakerCards            = $('.speaker-card');
     elms.$what                    = $('.what');
     elms.$showCodeOfConduct       = $('#show-code-of-conduct');
     elms.$showPresentationDetails = $('#show-presentation-details');
@@ -106,6 +107,26 @@
     }
   };
 
+  var showHideBios = function () {
+    elms.$speakerCards.on('click', function (event) {
+      event.preventDefault();
+
+      var $currentTarget = $(event.currentTarget);
+
+      if ($currentTarget.hasClass('no-click')) {
+        return;
+      }
+
+      var clickedOnBioIsNotAlreadyActive = !$currentTarget.hasClass('active');
+
+      $('.speaker-card.active').removeClass('active');
+
+      if (clickedOnBioIsNotAlreadyActive) {
+        $currentTarget.addClass('active');
+      }
+    });
+  };
+
   var callOnWindowScroll = function () {
     transitionNavBarBackgroundOnMobile();
     desktopStickNav();
@@ -118,6 +139,7 @@
     scrollToSections();
     transitionNavBarBackgroundOnMobile();
     desktopStickNav();
+    showHideBios();
 
     // On resize re-calculate and set the height of the mobile nav item heights
     elms.$window.on('scroll', callOnWindowScroll);
