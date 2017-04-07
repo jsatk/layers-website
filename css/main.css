@@ -517,20 +517,39 @@ nav li a:hover {
   display: none;
 }
 
+/* I hate this :( */
 .speaker-card,
 .speaker-card .image-wrapper,
 .speaker-card .image-wrapper .image-square,
 .speaker-card .image-wrapper .photo,
 .speaker-card .name,
 .speaker-card .subtitle,
+.speaker-card .show-bio-button,
 .speaker-card .bio {
   cursor: pointer;
 }
 
 .speaker-card {
   margin-bottom: 2em;
+  position: relative;
   transition: width 300ms ease-out;
   width: 80%;
+}
+
+.speaker-card .show-bio-button {
+  color: #ec6561;
+  font-size: 3em;
+  left: 216px;
+  position: absolute;
+  top: 240px;
+}
+
+.speaker-card .show-bio-button {
+  transition: all 300ms ease-in-out;
+}
+
+.speaker-card.active .show-bio-button {
+  transform: rotate(45deg);
 }
 
 .speaker-card.no-click {
