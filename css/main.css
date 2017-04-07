@@ -517,8 +517,17 @@ nav li a:hover {
   display: none;
 }
 
-.speaker-card {
+.speaker-card,
+.speaker-card .image-wrapper,
+.speaker-card .image-wrapper .image-square,
+.speaker-card .image-wrapper .photo,
+.speaker-card .name,
+.speaker-card .subtitle,
+.speaker-card .bio {
   cursor: pointer;
+}
+
+.speaker-card {
   margin-bottom: 2em;
   transition: width 300ms ease-out;
   width: 80%;
@@ -529,7 +538,6 @@ nav li a:hover {
 }
 
 .speaker-card .bio {
-  cursor: pointer;
   margin-top: 2em;
   max-height: 0;
   overflow: hidden;

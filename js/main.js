@@ -108,7 +108,7 @@
   };
 
   var showHideBios = function () {
-    elms.$speakerCards.on('click', function (event) {
+    elms.$speakerCards.on('click touch', function (event) {
       event.preventDefault();
 
       var $currentTarget = $(event.currentTarget);
