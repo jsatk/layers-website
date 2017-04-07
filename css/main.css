@@ -576,7 +576,8 @@ nav li a:hover {
   margin-top: 15px;
 }
 
-.speaker-card.mid-width {
+.speaker-card.mid-width,
+.speaker-card.full-width {
   display: none;
 }
 
