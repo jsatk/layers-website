@@ -482,7 +482,7 @@ nav li a:hover {
 
 .mobile-only nav li {
   font-family: RamaGothicC-SemiBold;
-  font-size: 5em;
+  font-size: 4em;
   font-style: normal;
   font-weight: normal;
 }
@@ -529,6 +529,18 @@ nav li a:hover {
   cursor: pointer;
 }
 
+/* I hate this :( */
+.speaker-card.no-click,
+.speaker-card.no-click .image-wrapper,
+.speaker-card.no-click .image-wrapper .image-square,
+.speaker-card.no-click .image-wrapper .photo,
+.speaker-card.no-click .name,
+.speaker-card.no-click .subtitle,
+.speaker-card.no-click .show-bio-button,
+.speaker-card.no-click .bio {
+  cursor: auto;
+}
+
 .speaker-card {
   margin-bottom: 2em;
   position: relative;
@@ -552,18 +564,14 @@ nav li a:hover {
   transform: rotate(45deg);
 }
 
-.speaker-card.no-click {
-  cursor: auto;
-}
-
 .speaker-card .bio {
-  margin-top: 2em;
   max-height: 0;
   overflow: hidden;
   transition: max-height 300ms ease-out;
 }
 
 .speaker-card.active .bio {
+  color: #25235a;
   max-height: 500px;
   max-width: 90%;
   transition: max-height 300ms ease-in;
@@ -608,15 +616,15 @@ nav li a:hover {
   display: none;
 }
 
-.image-wrapper {
-  background: url('../img/patterns_stripe/bio-background.svg') bottom left no-repeat transparent;
-  background-size: 0 0;
-  position: relative;
-  min-height: 248px; /* TODO: This is hot garbage */
+.no-click .image-wrapper {
+  background: none;
 }
 
-.active .image-wrapper {
-  background-size: 100% 238px;
+.image-wrapper {
+  background: url('../img/patterns_stripe/bio-background.svg') bottom left no-repeat transparent;
+  background-size: 85%;
+  position: relative;
+  min-height: 248px; /* TODO: This is hot garbage */
 }
 
 .image-wrapper img {
@@ -633,6 +641,17 @@ nav li a:hover {
   position: relative;
   width: 238px;
   z-index: 1;
+  transition: all 300ms ease-out;
+}
+
+.active .image-wrapper .image-square {
+  transition: all 300ms ease-in;
+  width: 95%;
+}
+
+.gray-line {
+  display: none;
+  max-width: 90%;
 }
 
 .speaker-card .subtitle {
@@ -861,6 +880,9 @@ footer h3 {
 
 .credits {
   padding-top: 40px; /* TODO: Remove this style once we have sponors */
+  float: right;
+  margin-right: 19px;
+  width: 65%;
 }
 
 /* ==========================================================================
@@ -950,6 +972,10 @@ footer h3 {
 
   .what .go-to-sign-up {
     font-size: 0.5em;
+  }
+
+  .mobile-only nav li {
+    font-size: 5em;
   }
 }
 
@@ -1073,9 +1099,13 @@ footer h3 {
   }
 
   .speaker-card .subtitle {
-    border-bottom: 1px solid #c8cccd;
     font-size: 1em;
     width: 238px;
+  }
+
+  .gray-line {
+    display: block;
+    border-bottom: 1px solid #c8cccd;
   }
 
   .speakers h2 {
@@ -1221,7 +1251,7 @@ footer h3 {
 
   .sponsors {
     clear: right;
-    float: none;
+    /* float: none; */
     margin: 0 auto;
     width: 80%;
   }

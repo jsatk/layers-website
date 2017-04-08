@@ -132,13 +132,12 @@
     desktopStickNav();
   };
 
-  $(window).on('load', function () {
+  $(function () {
     cacheElms();
     setGlobalVars();
     showHideNav();
     scrollToSections();
     transitionNavBarBackgroundOnMobile();
-    desktopStickNav();
     showHideBios();
 
     // On resize re-calculate and set the height of the mobile nav item heights
@@ -152,5 +151,11 @@
       event.preventDefault();
       elms.$presentationDetails.toggleClass('active');
     });
+  });
+
+  // We have to wait for the entire page to load to set this as Safari is a
+  // unique snowflake with this one.
+  $(window).on('load', function () {
+    desktopStickNav();
   });
 })(jQuery, this);
