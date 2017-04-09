@@ -651,7 +651,7 @@ nav li a:hover {
 
 .gray-line {
   display: none;
-  max-width: 90%;
+  margin-top: 1em;
 }
 
 .speaker-card .subtitle {
@@ -809,7 +809,9 @@ footer h3 {
 }
 
 .credits {
-  clear: both;
+  /* clear: both; */
+  /* margin-right: 19px; */
+  padding-top: 40px; /* TODO: Remove this style once we have sponors */
   text-transform: uppercase;
 }
 
@@ -876,13 +878,6 @@ footer h3 {
 
 .host-cards-container section:first-child {
   margin-bottom: 70px;
-}
-
-.credits {
-  padding-top: 40px; /* TODO: Remove this style once we have sponors */
-  float: right;
-  margin-right: 19px;
-  width: 65%;
 }
 
 /* ==========================================================================
@@ -1205,6 +1200,11 @@ footer h3 {
   .large-header {
     display: inline;
   }
+
+  /* .credits { */
+  /*   float: right; */
+  /*   width: 65%; */
+  /* } */
 
   .small-header,
   .medium-header {
