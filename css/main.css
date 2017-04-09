@@ -258,7 +258,6 @@ h4 {
 }
 
 .what h2 {
-  /* background: url('../img/headline-bgs/what.svg') 0px 64px no-repeat transparent; */
   color: transparent; /* Allows us to still type in the text of what's there for screen readers but not show it for folks on traditional browsers */
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -551,7 +550,7 @@ nav li a:hover {
 .speaker-card .show-bio-button {
   color: #ec6561;
   font-size: 3em;
-  left: 216px;
+  right: 17px;
   position: absolute;
   top: 240px;
 }
@@ -1008,8 +1007,8 @@ footer h3 {
     width: 82%;
   }
 
-  .what h2 {
-    float: left;
+  .what img {
+    margin-left: 70px;
   }
 
   .what .copy {
@@ -1246,6 +1245,7 @@ footer h3 {
   }
 
   .deets section {
+    margin-right: 30px;
     width: 50%;
   }
 
