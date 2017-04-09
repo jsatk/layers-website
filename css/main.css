@@ -1083,7 +1083,10 @@ footer h3 {
     float: left;
   }
 
-  .speaker-card,
+  .speaker-card {
+    width: 43%;
+  }
+
   .speaker-card.active {
     width: 50%;
   }
