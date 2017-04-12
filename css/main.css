@@ -512,10 +512,6 @@ nav li a:hover {
   margin-top: 50px;
 }
 
-.speakers .speaker-card:nth-child(3) {
-  display: none;
-}
-
 /* I hate this :( */
 .speaker-card,
 .speaker-card .image-wrapper,
@@ -593,12 +589,20 @@ nav li a:hover {
   background-image: url(../img/speakers/bio_andmore.jpg);
 }
 
-.speaker-card:nth-child(odd) {
+.speaker-block:nth-child(odd) .speaker-card:nth-child(odd) {
   float: left;
 }
 
-.speaker-card:nth-child(even) {
+.speaker-block:nth-child(odd) .speaker-card:nth-child(even) {
   float: right;
+}
+
+.speaker-block:nth-child(even) .speaker-card:nth-child(odd) {
+  float: right;
+}
+
+.speaker-block:nth-child(even) .speaker-card:nth-child(even) {
+  float: left;
 }
 
 .speaker-card .name {
@@ -1076,10 +1080,15 @@ footer h3 {
     padding-top: 10px;
   }
 
-  .speaker-card:nth-child(odd),
-  .speaker-card:nth-child(even),
   .sponsor-card:nth-child(odd),
   .sponsor-card:nth-child(even) {
+    float: left;
+  }
+
+  .speaker-block:nth-child(odd) .speaker-card:nth-child(odd),
+  .speaker-block:nth-child(odd) .speaker-card:nth-child(even),
+  .speaker-block:nth-child(even) .speaker-card:nth-child(odd),
+  .speaker-block:nth-child(even) .speaker-card:nth-child(even) {
     float: left;
   }
 
@@ -1218,7 +1227,6 @@ footer h3 {
   }
 
   .speaker-card {
-    float: left;
     width: 25%;
   }
 
@@ -1239,12 +1247,12 @@ footer h3 {
   }
 
   .speaker-block:nth-child(odd) .speaker-card {
-    float: right;
+    float: right !important;
     clear: left;
   }
 
   .speaker-block:nth-child(even) .speaker-card {
-    float: left;
+    float: left !important;
   }
 
   .deets section {
