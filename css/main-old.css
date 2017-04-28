@@ -258,6 +258,7 @@ h4 {
 }
 
 .what h2 {
+  /* background: url('../img/headline-bgs/what.svg') 0px 64px no-repeat transparent; */
   color: transparent; /* Allows us to still type in the text of what's there for screen readers but not show it for folks on traditional browsers */
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -476,12 +477,12 @@ nav li a:hover {
 
 .mobile-only nav {
   height: 0;
-  background: #e3e5e5; /* TODO: remove? */
+  background: #e3e5e5; /* TODO: Maybe can delete? */
 }
 
 .mobile-only nav li {
   font-family: RamaGothicC-SemiBold;
-  font-size: 4em;
+  font-size: 5em;
   font-style: normal;
   font-weight: normal;
 }
@@ -497,7 +498,6 @@ nav li a:hover {
 
 .speakers {
   background: url('../img/patterns_stripe/dark_to_light.svg') 0 0 repeat-x transparent;
-  background-size: 80px;
 }
 
 .speakers h2 {
@@ -512,76 +512,20 @@ nav li a:hover {
   margin-top: 50px;
 }
 
-/* speaker card management */
-.speaker-card,
-.speaker-card .image-wrapper,
-.speaker-card .image-wrapper .image-square,
-.speaker-card .image-wrapper .photo,
-.speaker-card .name,
-.speaker-card .subtitle,
-.speaker-card .show-bio-button,
-.speaker-card .bio {
-  cursor: pointer;
-}
-
-/* speaker card management */
-.speaker-card.no-click,
-.speaker-card.no-click .image-wrapper,
-.speaker-card.no-click .image-wrapper .image-square,
-.speaker-card.no-click .image-wrapper .photo,
-.speaker-card.no-click .name,
-.speaker-card.no-click .subtitle,
-.speaker-card.no-click .show-bio-button,
-.speaker-card.no-click .bio {
-  cursor: auto;
+.speakers .speaker-card:first-child {
+  display: none;
 }
 
 .speaker-card {
-  margin-bottom: 2em;
-  position: relative;
-  transition: width 300ms ease-out;
+  margin-bottom: 4em;
   width: 80%;
-}
-
-.speaker-card .show-bio-button {
-  color: #ec6561;
-  font-size: 3em;
-  right: 17px;
-  position: absolute;
-  top: 240px;
-}
-
-.speaker-card .show-bio-button {
-  transition: all 300ms ease-in-out;
-}
-
-.speaker-card.active .show-bio-button {
-  transform: rotate(45deg);
-}
-
-.speaker-card .bio {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 300ms ease-out;
-}
-
-.speaker-card.active .bio {
-  color: #25235a;
-  max-height: 500px;
-  max-width: 90%;
-  transition: max-height 300ms ease-in;
-}
-
-.speaker-card.active {
-  transition: width 300ms ease-in;
-  width: 100%;
 }
 
 .speaker-block:first-child .speaker-card:first-child {
   border-bottom: none;
 }
 
-.speaker-block:first-child .speaker-card:nth-child(4) img {
+.speaker-block:first-child .speaker-card:nth-child(1) img {
   top: -10px;
 }
 
@@ -589,20 +533,12 @@ nav li a:hover {
   background-image: url(../img/speakers/bio_andmore.jpg);
 }
 
-.speaker-block:nth-child(odd) .speaker-card:nth-child(odd) {
+.speaker-card:nth-child(odd) {
   float: left;
 }
 
-.speaker-block:nth-child(odd) .speaker-card:nth-child(even) {
+.speaker-card:nth-child(even) {
   float: right;
-}
-
-.speaker-block:nth-child(even) .speaker-card:nth-child(odd) {
-  float: right;
-}
-
-.speaker-block:nth-child(even) .speaker-card:nth-child(even) {
-  float: left;
 }
 
 .speaker-card .name {
@@ -614,33 +550,9 @@ nav li a:hover {
   margin-top: 15px;
 }
 
-
-.speaker-card-more {
-  color: #b5b5b5;
-  clear: both;
-  margin: 0 auto;
-  position: relative;
-  font-family: RamaGothicC-SemiBold;
-  font-size: 3.5em;
-  letter-spacing: .035em;
-  text-transform: uppercase;
-}
-
-
-.speaker-card.mid-width,
-.speaker-card.full-width {
-  display: none;
-}
-
-.no-click .image-wrapper {
-  background: none;
-}
-
 .image-wrapper {
-  background: url('../img/patterns_stripe/bio-background.svg') bottom left no-repeat transparent;
-  background-size: 85%;
   position: relative;
-  min-height: 248px; /* TODO: change? */
+  min-height: 250px; /* TODO: This is hot garbage */
 }
 
 .image-wrapper img {
@@ -657,17 +569,6 @@ nav li a:hover {
   position: relative;
   width: 238px;
   z-index: 1;
-  transition: all 300ms ease-out;
-}
-
-.active .image-wrapper .image-square {
-  transition: all 300ms ease-in;
-  width: 95%;
-}
-
-.gray-line {
-  display: none;
-  margin-top: 1em;
 }
 
 .speaker-card .subtitle {
@@ -825,9 +726,7 @@ footer h3 {
 }
 
 .credits {
-  /* clear: both; */
-  /* margin-right: 19px; */
-  padding-top: 40px; /* TODO: Remove this style once we have sponors */
+  clear: both;
   text-transform: uppercase;
 }
 
@@ -894,6 +793,10 @@ footer h3 {
 
 .host-cards-container section:first-child {
   margin-bottom: 70px;
+}
+
+.credits {
+  padding-top: 40px; /* TODO: Remove this style once we have sponors */
 }
 
 /* ==========================================================================
@@ -984,17 +887,6 @@ footer h3 {
   .what .go-to-sign-up {
     font-size: 0.5em;
   }
-
-  .mobile-only nav li {
-    font-size: 5em;
-  }
-
-  .speaker-card-more {
-  float: left;
-  text-align: left;
-  width: 100%;
-  }
-
 }
 
 /* All previous styles styled following layers_web2016_mobile_0_560.jpg */
@@ -1031,8 +923,8 @@ footer h3 {
     width: 82%;
   }
 
-  .what img {
-    margin-left: 70px;
+  .what h2 {
+    float: left;
   }
 
   .what .copy {
@@ -1045,16 +937,8 @@ footer h3 {
     margin-left: -32px;
   }
 
-  .speakers .speaker-card:nth-child(3) {
+  .speakers .speaker-card:first-child {
     display: inline;
-  }
-
-  .speaker-card.mid-width {
-    display: block;
-  }
-
-  .speaker-card.full-width {
-    display: none;
   }
 
   .presenters {
@@ -1100,23 +984,14 @@ footer h3 {
     padding-top: 10px;
   }
 
+  .speaker-card:nth-child(odd),
+  .speaker-card:nth-child(even),
   .sponsor-card:nth-child(odd),
   .sponsor-card:nth-child(even) {
     float: left;
   }
 
-  .speaker-block:nth-child(odd) .speaker-card:nth-child(odd),
-  .speaker-block:nth-child(odd) .speaker-card:nth-child(even),
-  .speaker-block:nth-child(even) .speaker-card:nth-child(odd),
-  .speaker-block:nth-child(even) .speaker-card:nth-child(even) {
-    float: left;
-  }
-
   .speaker-card {
-    width: 43%;
-  }
-
-  .speaker-card.active {
     width: 50%;
   }
 
@@ -1125,19 +1000,9 @@ footer h3 {
   }
 
   .speaker-card .subtitle {
+    border-bottom: 1px solid #c8cccd;
     font-size: 1em;
     width: 238px;
-  }
-
-  .speaker-card-more {
-  float: left;
-  text-align: left;
-  width: 100%;
-  }
-
-  .gray-line {
-    display: block;
-    border-bottom: 1px solid #c8cccd;
   }
 
   .speakers h2 {
@@ -1238,11 +1103,6 @@ footer h3 {
     display: inline;
   }
 
-  /* .credits { */
-  /*   float: right; */
-  /*   width: 65%; */
-  /* } */
-
   .small-header,
   .medium-header {
     display: none;
@@ -1253,48 +1113,29 @@ footer h3 {
   }
 
   .speaker-card {
-    width: 25%;
-  }
-
-  .speaker-card.active {
-    width: 50%;
-  }
-
-  .speaker-card.mid-width {
-    display: none;
-  }
-
-  .speaker-card.full-width {
-    display: block;
+    float: left;
+    width: 33%;
   }
 
   .speaker-block {
-    clear: both;
+    width: 80%;
   }
 
-  .speaker-block:nth-child(odd) .speaker-card {
-    float: right !important;
-    clear: left;
+  .speaker-block:nth-child(odd) {
+    float: right;
   }
 
-  .speaker-block:nth-child(even) .speaker-card {
-    float: left !important;
-  }
-
-  .speaker-card-more {
-  float: right;
-  text-align: left;
-  width: 50%;
+  .speaker-block:nth-child(even) {
+    float: left;
   }
 
   .deets section {
-    margin-right: 30px;
     width: 50%;
   }
 
   .sponsors {
     clear: right;
-    /* float: none; */
+    float: none;
     margin: 0 auto;
     width: 80%;
   }
@@ -1345,12 +1186,6 @@ footer h3 {
 @media all and (min-width: 1200px) {
   .code-of-conduct.active {
     height: 1480px;
-  }
-
-  .speaker-card-more {
-  float: right;
-  text-align: left;
-  width: 50%;
   }
 }
 
@@ -1432,4 +1267,3 @@ footer h3 {
     page-break-after: avoid;
   }
 }
-
