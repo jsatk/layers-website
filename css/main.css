@@ -752,12 +752,6 @@ footer h3 {
   margin-bottom: -10px;
 }
 
-.map {
-  background: #212c5b;
-  height: 500px;
-  width: 500px;
-}
-
 .tito-submit-wrapper button {
   background-color: #ec6561;
   color: white;
@@ -894,6 +888,17 @@ footer h3 {
 
 .host-cards-container section:first-child {
   margin-bottom: 70px;
+}
+
+.map-wrapper {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.map {
+  height: 1412px;
+  width: 3840px;
 }
 
 /* ==========================================================================
@@ -1080,7 +1085,6 @@ footer h3 {
 
   .deets .wrapper {
     position: relative;
-    background: url('../img/map.jpg') center center no-repeat transparent
   }
 
   .deets section {

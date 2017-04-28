@@ -144,7 +144,7 @@
                     <span class="show-bio-button"><img src="img/plus-sign.svg" width="24" height="24"></span>
                     <div class="subtitle cushycms">Product Design Lead,<br> New York Times</div>
                     <div class="bio">
-                      
+
                       <br>
                       Amélie Lamont is a product designer(d) and writer based in Brooklyn, NY. She is currently employed at The New York Times and specializes in using cultural studies and design anthropology to inform her design process and to build the Customer Product Design System.</div>
                     <div class="gray-line"></div>
@@ -163,7 +163,7 @@
                       <div class="image-square"></div>
                       <img class="photo" alt="Speaker" src="img/speakers/chelsea.png" width="100%">
                     </div>
-                    
+
                     <div class="name">Chelsea<br>Atwell</div>
                     <span class="show-bio-button"><img src="img/plus-sign.svg" width="24" height="24"></span>
                     <div class="subtitle cushycms">Former Design Lead,<br> Hillary for America</div>
@@ -201,7 +201,7 @@
                     <div class="gray-line"></div>
                   </div>
                 </div>
-                
+
                    <div class="speaker-block">
                   <div class="speaker-card">
                     <div class=image-wrapper>
@@ -212,13 +212,13 @@
                     <span class="show-bio-button"><img src="img/plus-sign.svg" width="24" height="24"></span>
                     <div class="subtitle cushycms">Senior Manager,<br> New York Times</div>
                     <div class="bio">
-                   
+
                       <br>
                       Victor Ng is currently the Senior Manager of Digital Design at The New York Times. Previously, he led the web design team for Hillary Clinton’s 2016 presidential campaign, and spent several years as a designer at Pinterest.</div>
                     <div class="gray-line"></div>
                   </div>
 
-               
+
                   <div class="speaker-card">
                     <div class=image-wrapper>
                       <div class="image-square"></div>
@@ -228,12 +228,12 @@
                     <span class="show-bio-button"><img src="img/plus-sign.svg" width="24" height="24"></span>
                     <div class="subtitle cushycms">Product Design Manager,<br> Instagram</div>
                     <div class="bio">
-                     
+
                       <br>
                       Ted Boda is currently a Product Design Manager at Instagram. He was formerly the Director of Design at Udacity, Lead Designer at Nest, Lead Mobile Designer at Netflix, and Lead Product Designer at Apple where he spent 5 years crafting the Keynote experience on the Mac, iPad, and iPhone. Ted started his design career at Duarte Design where he worked with Apple and one-on-one with Al Gore, to help create the compelling and impactful slides that were the basis for the Academy Award winning film, An Inconvenient Truth.</div>
                     <div class="gray-line"></div>
                   </div>
-                  
+
                       <div class="speaker-card">
                     <div class=image-wrapper>
                       <div class="image-square"></div>
@@ -243,30 +243,30 @@
                     <span class="show-bio-button"><img src="img/plus-sign.svg" width="24" height="24"></span>
                     <div class="subtitle cushycms">Founder,<br>Sequoia Creative Lab</div>
                     <div class="bio">
-                     
+
                       <br>
                       James Buckhouse is the founder of the Sequoia Creative Lab at Sequoia Capital. Buckhouse built his story-driven design skills as a cinematographer, choreographer and occasional punch-up writer on Antz, Shrek, Shrek 2, Shrek the Third, Shrek 4D, Shrek the Halls, Madagascar, and Madagascar 2 and Matrix Revolutions. He earned his product skills as Twitter's Sr. Experience Architect, designing and shipping guerrilla growth products. James also has served as a production designer for New York City Ballet, Oregon Ballet Theatre, Pennsylvania Ballet, and founded Sensorium at San Francisco Ballet. His art work has been shown at the Guggenheim Works & Process Series, the Whitney Biennial at the Whitney Museum of American Art, ICA in London, and the Dia Center. He lectures at Stanford's Graduate School of Business and dschool. </div>
                     <div class="gray-line"></div>
                   </div>
-                  
-          
 
-               
+
+
+
                 </div>
-                
-                  
-                
-          
-                
-              
+
+
+
+
+
+
 
                 <div class="speaker-block">
                   <div class="speaker-card-more">
                     <div class="name">more speakers soon!</div>
 
                   </div>
-                </div>  
-                
+                </div>
+
 
               </section>
               <!-- Speakers section ends -->
@@ -276,6 +276,9 @@
 
         <div id="deets" class="deets">
           <div class="wrapper">
+            <div class="map-wrapper">
+              <div id="map" class="map"></div>
+            </div>
             <div class="container">
               <section>
                 <h2 class="hidden">The<br>Deets</h2>
@@ -420,7 +423,7 @@
               </div>
 
               <section class="sponsors">
-            
+
               </section>
             </div>
           </div>
@@ -438,6 +441,247 @@
 
         ga('create', 'UA-62445858-1', 'auto');
         ga('send', 'pageview');
+      </script>
+      <!-- Google Map API -->
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+      <script type="text/javascript">
+          // When the window has finished loading create our google map below
+          google.maps.event.addDomListener(window, 'load', init);
+
+          function init() {
+              // Basic options for a simple Google Map
+              // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+              var mapOptions = {
+                  // How zoomed in you want the map to start at (always required)
+                  zoom: 14,
+
+                  disableDefaultUI: true,
+                  draggable: false,
+                  zoomControl: false,
+                  scrollwheel: false,
+                  disableDoubleClickZoom: true,
+
+                  // The latitude and longitude to center the map (always required)
+                  center: new google.maps.LatLng(37.291805, -121.792917), // Montgomery Theater
+
+                  // How you would like to style the map.
+                  // This is where you would paste any style found on Snazzy Maps.
+                  styles: [
+                    {
+                        "featureType": "poi",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "hue": "#000000"
+                            },
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": -100
+                            },
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "hue": "#000000"
+                            },
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": -100
+                            },
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "hue": "#000000"
+                            },
+                            {
+                                "saturation": 0
+                            },
+                            {
+                                "lightness": -100
+                            },
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "labels",
+                        "stylers": [
+                            {
+                                "hue": "#ffffff"
+                            },
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": 100
+                            },
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels",
+                        "stylers": [
+                            {
+                                "hue": "#000000"
+                            },
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": -100
+                            },
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "hue": "#ffffff"
+                            },
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": 100
+                            },
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "hue": "#ffffff"
+                            },
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": 100
+                            },
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "labels",
+                        "stylers": [
+                            {
+                                "hue": "#000000"
+                            },
+                            {
+                                "saturation": 0
+                            },
+                            {
+                                "lightness": -100
+                            },
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "labels",
+                        "stylers": [
+                            {
+                                "hue": "#000000"
+                            },
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": -100
+                            },
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "hue": "#bbbbbb"
+                            },
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": 26
+                            },
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "hue": "#dddddd"
+                            },
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": -3
+                            },
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    }
+                ]
+              };
+
+              // Get the HTML DOM element that will contain your map
+              // We are using a div with id="map" seen below in the <body>
+              var mapElement = document.getElementById('map');
+
+              // Create the Google Map using our element and options defined above
+              var map = new google.maps.Map(mapElement, mapOptions);
+
+              // Let's also add a marker while we're at it
+              var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(37.3308, -121.889),
+                map: map,
+                title: 'Layers 2017'
+              });
+          }
       </script>
     </body>
 </html>
