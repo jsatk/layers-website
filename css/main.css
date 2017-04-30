@@ -891,7 +891,7 @@ footer h3 {
 }
 
 .map-wrapper {
-  display:none;
+  display: none;
   left: 0;
   position: absolute;
   top: 0;
@@ -1197,7 +1197,7 @@ footer h3 {
   }
 
   .map-wrapper {
-  display:block;
+    display: block;
   }
 
   .code-of-conduct.active {
