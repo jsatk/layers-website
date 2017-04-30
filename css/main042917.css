@@ -891,7 +891,6 @@ footer h3 {
 }
 
 .map-wrapper {
-  display:none;
   left: 0;
   position: absolute;
   top: 0;
@@ -1194,10 +1193,6 @@ footer h3 {
 
   .deets h1 {
     margin-top: 40px;
-  }
-
-  .map-wrapper {
-  display:block;
   }
 
   .code-of-conduct.active {
