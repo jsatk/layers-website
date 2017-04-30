@@ -169,7 +169,7 @@
                     <div class="subtitle cushycms">Former Design Lead,<br> Hillary for America</div>
                     <div class="bio">
                       <br>
-                      Chelsea Atwell is an art director and designer living in NYC. For the last year she worked on the historic presidential campaign for Hillary Clinton, serving as a lead designer. Currently, she is working at Adler Design and Nobody Studios in NYC. Chelsea received her BFA degree from the Milwaukee Institute of Art & Design.</div>
+                      Chelsea Atwell is an art director and designer living in NYC. For the last year she worked on the historic presidential campaign for Hillary Clinton, serving as a lead designer. Currently, she is working at Adler Design and Nobody Studios in NYC. Chelsea received her BFA degree from the Milwaukee Institute of Art &amp; Design.</div>
                     <div class="gray-line"></div>
                   </div>
 
@@ -327,7 +327,7 @@
                   </div>
 
                   <!--
-                    This stupid `<br>` tag is necessary because tito pushes
+                    `<br>` tag is necessary because tito pushes
                     one of their elements outside of the container causing
                     weird ass wrapping.
                   -->
@@ -453,7 +453,7 @@
               // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
               var mapOptions = {
                   // How zoomed in you want the map to start at (always required)
-                  zoom: 14,
+                  zoom: 15,
 
                   disableDefaultUI: true,
                   draggable: false,
@@ -462,210 +462,168 @@
                   disableDoubleClickZoom: true,
 
                   // The latitude and longitude to center the map (always required)
-                  center: new google.maps.LatLng(37.291805, -121.792917), // Montgomery Theater
+                  center: new google.maps.LatLng(37.311662, -121.825956), // Montgomery Theater
 
                   // How you would like to style the map.
                   // This is where you would paste any style found on Snazzy Maps.
                   styles: [
-                    {
-                        "featureType": "poi",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "hue": "#000000"
-                            },
-                            {
-                                "saturation": -100
-                            },
-                            {
-                                "lightness": -100
-                            },
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "poi",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "hue": "#000000"
-                            },
-                            {
-                                "saturation": -100
-                            },
-                            {
-                                "lightness": -100
-                            },
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "administrative",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "hue": "#000000"
-                            },
-                            {
-                                "saturation": 0
-                            },
-                            {
-                                "lightness": -100
-                            },
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road",
-                        "elementType": "labels",
-                        "stylers": [
-                            {
-                                "hue": "#ffffff"
-                            },
-                            {
-                                "saturation": -100
-                            },
-                            {
-                                "lightness": 100
-                            },
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "water",
-                        "elementType": "labels",
-                        "stylers": [
-                            {
-                                "hue": "#000000"
-                            },
-                            {
-                                "saturation": -100
-                            },
-                            {
-                                "lightness": -100
-                            },
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.local",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "hue": "#ffffff"
-                            },
-                            {
-                                "saturation": -100
-                            },
-                            {
-                                "lightness": 100
-                            },
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "water",
-                        "elementType": "geometry",
-                        "stylers": [
-                            {
-                                "hue": "#ffffff"
-                            },
-                            {
-                                "saturation": -100
-                            },
-                            {
-                                "lightness": 100
-                            },
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "transit",
-                        "elementType": "labels",
-                        "stylers": [
-                            {
-                                "hue": "#000000"
-                            },
-                            {
-                                "saturation": 0
-                            },
-                            {
-                                "lightness": -100
-                            },
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "landscape",
-                        "elementType": "labels",
-                        "stylers": [
-                            {
-                                "hue": "#000000"
-                            },
-                            {
-                                "saturation": -100
-                            },
-                            {
-                                "lightness": -100
-                            },
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road",
-                        "elementType": "geometry",
-                        "stylers": [
-                            {
-                                "hue": "#bbbbbb"
-                            },
-                            {
-                                "saturation": -100
-                            },
-                            {
-                                "lightness": 26
-                            },
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "landscape",
-                        "elementType": "geometry",
-                        "stylers": [
-                            {
-                                "hue": "#dddddd"
-                            },
-                            {
-                                "saturation": -100
-                            },
-                            {
-                                "lightness": -3
-                            },
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    }
-                ]
+                                {
+                                    "featureType": "all",
+                                    "elementType": "labels",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "all",
+                                    "elementType": "labels.text.fill",
+                                    "stylers": [
+                                        {
+                                            "color": "#ffffff"
+                                        },
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "all",
+                                    "elementType": "labels.text.stroke",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        },
+                                        {
+                                            "color": "#3e606f"
+                                        },
+                                        {
+                                            "weight": 2
+                                        },
+                                        {
+                                            "gamma": 0.84
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "all",
+                                    "elementType": "labels.icon",
+                                    "stylers": [
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "administrative",
+                                    "elementType": "geometry",
+                                    "stylers": [
+                                        {
+                                            "weight": 0.6
+                                        },
+                                        {
+                                            "color": "#c91c1c"
+                                        },
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "landscape",
+                                    "elementType": "geometry",
+                                    "stylers": [
+                                        {
+                                            "color": "#2c5a71"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "landscape",
+                                    "elementType": "geometry.fill",
+                                    "stylers": [
+                                        {
+                                            "color": "#dce4e7"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "landscape",
+                                    "elementType": "geometry.stroke",
+                                    "stylers": [
+                                        {
+                                            "color": "#ff0000"
+                                        },
+                                        {
+                                            "visibility": "off"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "poi",
+                                    "elementType": "geometry",
+                                    "stylers": [
+                                        {
+                                            "color": "#cbd6d8"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "poi.park",
+                                    "elementType": "geometry",
+                                    "stylers": [
+                                        {
+                                            "color": "#ced6d9"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road",
+                                    "elementType": "geometry",
+                                    "stylers": [
+                                        {
+                                            "color": "#f6faf9"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "road.local",
+                                    "elementType": "geometry",
+                                    "stylers": [
+                                        {
+                                            "color": "#f4f8fb"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "transit",
+                                    "elementType": "geometry",
+                                    "stylers": [
+                                        {
+                                            "color": "#c5cdd0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "transit.station",
+                                    "elementType": "geometry",
+                                    "stylers": [
+                                        {
+                                            "color": "#cbd6d8"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "featureType": "water",
+                                    "elementType": "geometry",
+                                    "stylers": [
+                                        {
+                                            "color": "#cdd5d8"
+                                        }
+                                    ]
+                                }
+                            ]
               };
 
               // Get the HTML DOM element that will contain your map
