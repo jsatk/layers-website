@@ -1,4 +1,4 @@
-# bringyourlayers.com 2016
+# bringyourlayers.com
 
 This is the repo for the Layers 2016 website.  The website was designed by [Grayson Yokota](http://yokotagrayson.com/) on his Windows PC (much to Jessie and Elaine's dismay).
 
